@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://nhw8kqbcvyqv"]
+
+[ext_resource type="PackedScene" uid="uid://cccmg0ip4m866" path="res://mundo_marcos.tscn" id="1_j0a06"]
+
+[node name="MundoMarcos" instance=ExtResource("1_j0a06")]
+
+[node name="45Vertical2" parent="." index="98"]
+position = Vector2(-712, -113)
+
+[node name="Cubo10" parent="." index="105"]
+position = Vector2(-669, -39)

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c52nsogb4egem"]
+
+[ext_resource type="Texture2D" uid="uid://bw0bx377iu8qv" path="res://Stuff/Utileria/187CVertical.png" id="1_g0to5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_owbrg"]
+size = Vector2(42, 770)
+
+[node name="187CVertical" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_g0to5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_owbrg")

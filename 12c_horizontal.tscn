@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://rh6dtmy56gwh"]
+
+[ext_resource type="Texture2D" uid="uid://cp0ujfwcc5eo0" path="res://Stuff/Utileria/12CHorizontal.png" id="1_0tqpk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mx6na"]
+size = Vector2(500, 42)
+
+[node name="12CHorizontal" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0tqpk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mx6na")

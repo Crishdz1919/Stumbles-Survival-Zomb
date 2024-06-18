@@ -1,0 +1,65 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1718744966
+2_horizontal.tscn::PackedScene::8300398438404149111::1718744966::0::1::::<><>::uid://dtdwqgvetil4g::::res://Stuff/Utileria/2 Horizontal.png
+2_vertical.tscn::PackedScene::2479614318385099657::1717821932::0::1::::<><>::uid://cl32lg0lcwav::::res://Stuff/Utileria/2 VERTICLA.png
+12c_horizontal.tscn::PackedScene::1209549587895516131::1717904488::0::1::::<><>::uid://cp0ujfwcc5eo0::::res://Stuff/Utileria/12CHorizontal.png
+12c_vertical.tscn::PackedScene::3801728708161755404::1717829737::0::1::::<><>::uid://tybroh0757cl::::res://Stuff/Utileria/12CVertical.png
+45_horizontal.tscn::PackedScene::1082178268650395785::1717826322::0::1::::<><>::uid://bftcmyvdyf3ym::::res://Stuff/Utileria/45horizontal.png
+45_vertical.tscn::PackedScene::9213889015228792014::1717826323::0::1::::<><>::uid://dwstfbgroikf6::::res://Stuff/Utileria/45Vertical.png
+55_horizontal.tscn::PackedScene::6243449725039776540::1717826322::0::1::::<><>::uid://dodbchqyt82fw::::res://Stuff/Utileria/55 horizontal.png
+55_vertical.tscn::PackedScene::7165246013202738986::1717904488::0::1::::<><>::uid://dmf3inuk537wr::::res://Stuff/Utileria/55Vertical.png
+187c_horizontal.tscn::PackedScene::4300078613546878209::1717826322::0::1::::<><>::uid://dc8ju6enc870j::::res://Stuff/Utileria/187CHorizontal.png
+187c_vertical.tscn::PackedScene::6935067085763121724::1717826323::0::1::::<><>::uid://bw0bx377iu8qv::::res://Stuff/Utileria/187CVertical.png
+bordes.tscn::PackedScene::3424583934041057416::1717821932::0::1::::<><>::uid://cgrimha5q5vgm::::res://Stuff/Utileria/bordes.png
+bordes_h.tscn::PackedScene::9077032886368964586::1717821932::0::1::::<><>::uid://brb2pst1hi822::::res://Stuff/Utileria/bordesH.png
+bordes_x_2.tscn::PackedScene::4955429472450793855::1717821932::0::1::::<><>::uid://dxhg4b42duybd::::res://Stuff/Utileria/BordesX2.png
+bordex_2h.tscn::PackedScene::1889130619371740556::1717821932::0::1::::<><>::uid://n4vpxqd0l7pp::::res://Stuff/Utileria/bordex2H.png
+CharacterBody2D.gd::GDScript::-1::1718702078::0::1::::<>CharacterBody2D<>::
+character_body_2d.gd::GDScript::-1::1718742193::0::1::::<>CharacterBody2D<>::
+character_body_2d.tscn::PackedScene::3380335040821313726::1718744966::0::1::::<><>::res://character_body_2d.gd<>uid://brbu1ron4i01v::::res://Personajes/css_sprites (19).png
+cubo.tscn::PackedScene::5292873436998847560::1718744966::0::1::::<><>::uid://d35ly0ecb3yk0::::res://Stuff/Utileria/Cubo.PNG
+icon.svg::CompressedTexture2D::8177395221034334532::1717661896::1717661903::1::::<><>::
+mundo_Alex.tscn::PackedScene::928300866611897085::1718744966::0::1::::<><>::uid://cccmg0ip4m866::::res://mundo_marcos.tscn
+mundo_marcos.tscn::PackedScene::4918088455009998289::1718744966::0::1::::<><>::uid://bp46dmp5dptjc::::res://Stuff/Mundo/Mapa Grande.png<>uid://dalem5dbtk00m::::res://Stuff/Mundo/Pasto Oscuro.png<>uid://bofpvhvqw6263::::res://character_body_2d.tscn<>uid://bo15nq842irwi::::res://bordes.tscn<>uid://dy8kvjto7js75::::res://techox_5h.tscn<>uid://ccupg1r1bywgl::::res://bordes_x_2.tscn<>uid://16dx8k66koye::::res://bordex_2h.tscn<>uid://ei1jsuxg11qt::::res://techox_6h.tscn<>uid://b3cmxxeb6e342::::res://techox_5mh.tscn<>uid://d2k8n1yqxarm5::::res://bordes_h.tscn<>uid://chn538fhn8oii::::res://cubo.tscn<>uid://b2i8wwq0atpan::::res://187c_horizontal.tscn<>uid://bble5dxtfo8xx::::res://2_vertical.tscn<>uid://dqi1l5d1raj3l::::res://2_horizontal.tscn<>uid://buft6fls2ovts::::res://12c_vertical.tscn<>uid://d4jjn2icsnvqs::::res://45_vertical.tscn<>uid://pohk2t0m0ov6::::res://45_horizontal.tscn<>uid://dac5s4takf6mo::::res://55_vertical.tscn<>uid://cu7mx70e5v2ku::::res://55_horizontal.tscn<>uid://rh6dtmy56gwh::::res://12c_horizontal.tscn<>uid://c52nsogb4egem::::res://187c_vertical.tscn<>uid://cv1mbp0f0d6e3::::res://Stuff/Utileria/Estatua_medias.png<>uid://dlsm5c2iomvmb::::res://Stuff/Utileria/Estatua.png<>uid://bmshrx3teih8l::::res://Stuff/Utileria/arbol.png
+player_alex.gd::GDScript::-1::1718702168::0::1::::<>CharacterBody2D<>::
+player_alex.tscn::PackedScene::860777200283588243::1718744966::0::1::::<><>::uid://cs8rkf7lct1ci::::res://Personajes/spritesAlex.png<>res://player_alex.gd
+player_lina.gd::GDScript::-1::1718702322::0::1::::<>CharacterBody2D<>::
+player_lina.tscn::PackedScene::3911547899578324180::1718744966::0::1::::<><>::res://player_lina.gd<>uid://bvctubnwtlulj::::res://Personajes/spritesLina.png
+player_sofia.tscn::PackedScene::4035394561747983410::1718744966::0::1::::<><>::res://CharacterBody2D.gd<>uid://g6raqspr7xu4::::res://Personajes/spritesSofia.png
+Sprite2D.gd::GDScript::-1::1718696329::0::1::::<>Sprite2D<>::
+techox_5h.tscn::PackedScene::8912563938616389998::1717821932::0::1::::<><>::uid://dl3bl0anbiubs::::res://Stuff/Utileria/techox5M.png
+techox_5mh.tscn::PackedScene::4356607952542460949::1717821932::0::1::::<><>::uid://brtn4kftlg1s3::::res://Stuff/Utileria/techox5MH.png
+techox_6h.tscn::PackedScene::298866087912156075::1717821932::0::1::::<><>::uid://j4xr3qeyep0x::::res://Stuff/Utileria/techox6H.png
+::res://Personajes/::1718692845
+css_sprites (19).png::CompressedTexture2D::3582957088944540701::1718692836::1718692837::1::::<><>::
+spritesAlex.png::CompressedTexture2D::6105415378124567756::1718676705::1718676705::1::::<><>::
+spritesLina.png::CompressedTexture2D::3865704567971794519::1718676696::1718676696::1::::<><>::
+spritesSofia.png::CompressedTexture2D::486161829966693137::1718676722::1718676722::1::::<><>::
+::res://Stuff/::1717806078
+::res://Stuff/Mundo/::1718745053
+Mapa Grande.png::CompressedTexture2D::3501008532108746920::1717734543::1717734554::1::::<><>::
+PastoOscuro.png::CompressedTexture2D::4043040315208513005::1718745053::1718745060::1::::<><>::
+::res://Stuff/Utileria/::1717962593
+2 Horizontal.png::CompressedTexture2D::8500407907795892156::1717822433::1717822433::1::::<><>::
+2 VERTICLA.png::CompressedTexture2D::164834722979982925::1717819517::1717819517::1::::<><>::
+12CHorizontal.png::CompressedTexture2D::5878514174505831253::1717823022::1717823022::1::::<><>::
+12CVertical.png::CompressedTexture2D::1383224918029597087::1717824903::1717824903::1::::<><>::
+45horizontal.png::CompressedTexture2D::2776732235892694644::1717822728::1717822728::1::::<><>::
+45Vertical.png::CompressedTexture2D::8741738025104792625::1717825425::1717825425::1::::<><>::
+55 horizontal.png::CompressedTexture2D::8148163677352002788::1717823319::1717823319::1::::<><>::
+55Vertical.png::CompressedTexture2D::8013565139849913597::1717825698::1717825699::1::::<><>::
+187CHorizontal.png::CompressedTexture2D::7368348008050076835::1717824426::1717824426::1::::<><>::
+187CVertical.png::CompressedTexture2D::3982287999386881369::1717825974::1717825974::1::::<><>::
+arbol.png::CompressedTexture2D::3266302236528833129::1717962593::1717962593::1::::<><>::
+bordes.png::CompressedTexture2D::5229576385551501788::1717794331::1717794332::1::::<><>::
+bordesH.png::CompressedTexture2D::3583362524969594725::1717807750::1717807750::1::::<><>::
+BordesX2.png::CompressedTexture2D::8788472287566564725::1717795514::1717795532::1::::<><>::
+bordex2H.png::CompressedTexture2D::973624998842932181::1717795988::1717795989::1::::<><>::
+bordex6H.png::CompressedTexture2D::1367013446536863426::1717795988::1717795989::1::::<><>::
+Cubo.PNG::CompressedTexture2D::9187193070896458877::1717821611::1717821611::1::::<><>::
+Estatua.png::CompressedTexture2D::7969280455540187757::1717961232::1717961040::1::::<><>::
+Estatua_medias.png::CompressedTexture2D::6301212121828640808::1717961232::1717961040::1::::<><>::
+PasillosX3.png::CompressedTexture2D::8768154033675985570::1717729428::1717806078::1::::<><>::
+techox5M.png::CompressedTexture2D::7989223582613141492::1717796987::1717796987::1::::<><>::
+techox5MH.png::CompressedTexture2D::3619695845631756136::1717798755::1717798756::1::::<><>::
+techox6H.png::CompressedTexture2D::692994892524700741::1717797615::1717797615::1::::<><>::

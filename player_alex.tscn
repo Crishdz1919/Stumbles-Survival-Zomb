@@ -1,0 +1,133 @@
+[gd_scene load_steps=11 format=3 uid="uid://mi740gj6axt8"]
+
+[ext_resource type="Texture2D" uid="uid://cs8rkf7lct1ci" path="res://Personajes/spritesAlex.png" id="1_wbexn"]
+[ext_resource type="Script" path="res://player_alex.gd" id="1_ytrsn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u0lbg"]
+radius = 28.278
+
+[sub_resource type="Animation" id="Animation_2t5li"]
+resource_name = "CaminarAlex"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [11, 12, 14, 11, 12, 14]
+}
+
+[sub_resource type="Animation" id="Animation_pfebo"]
+resource_name = "CaminarAlexIzq"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [3, 5, 6, 3, 5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_050mw"]
+resource_name = "Normal"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [16]
+}
+
+[sub_resource type="Animation" id="Animation_kj274"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [5]
+}
+
+[sub_resource type="Animation" id="Animation_asc5p"]
+resource_name = "DisparoAlex"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [19, 20]
+}
+
+[sub_resource type="Animation" id="Animation_yfv10"]
+resource_name = "DisparoAlexIzq"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [17, 18]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6ejo0"]
+_data = {
+"CaminarAlex": SubResource("Animation_2t5li"),
+"CaminarAlexIzq": SubResource("Animation_pfebo"),
+"DisparoAlex": SubResource("Animation_asc5p"),
+"DisparoAlexIzq": SubResource("Animation_yfv10"),
+"Normal": SubResource("Animation_050mw"),
+"RESET": SubResource("Animation_kj274")
+}
+
+[node name="PlayerAlex" type="CharacterBody2D"]
+script = ExtResource("1_ytrsn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wbexn")
+hframes = 23
+frame = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.71846, 19.5523)
+scale = Vector2(1.25134, 1.18804)
+shape = SubResource("CircleShape2D_u0lbg")
+
+[node name="Animaciones" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_6ejo0")
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]

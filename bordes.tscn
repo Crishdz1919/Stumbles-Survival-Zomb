@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo15nq842irwi"]
+
+[ext_resource type="Texture2D" uid="uid://cgrimha5q5vgm" path="res://Stuff/Utileria/bordes.png" id="1_fr2di"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pf2qx"]
+size = Vector2(42, 908)
+
+[node name="Bordes" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(367, 260)
+texture = ExtResource("1_fr2di")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(367, 260)
+shape = SubResource("RectangleShape2D_pf2qx")

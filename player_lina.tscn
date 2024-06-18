@@ -1,0 +1,133 @@
+[gd_scene load_steps=11 format=3 uid="uid://bvy1vfrwulltk"]
+
+[ext_resource type="Script" path="res://player_lina.gd" id="1_p6be2"]
+[ext_resource type="Texture2D" uid="uid://bvctubnwtlulj" path="res://Personajes/spritesLina.png" id="1_rkujc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ql8m2"]
+radius = 30.6275
+
+[sub_resource type="Animation" id="Animation_ffte3"]
+resource_name = "CaminarLina"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [11, 9, 14, 11, 9, 14]
+}
+
+[sub_resource type="Animation" id="Animation_dk60f"]
+resource_name = "CaminarLinaIzq"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [3, 4, 6, 3, 4, 6]
+}
+
+[sub_resource type="Animation" id="Animation_1vtyt"]
+resource_name = "Normal"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [16]
+}
+
+[sub_resource type="Animation" id="Animation_8vsd6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [9]
+}
+
+[sub_resource type="Animation" id="Animation_7w3y1"]
+resource_name = "DisparoLina"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [19, 20]
+}
+
+[sub_resource type="Animation" id="Animation_0jb4e"]
+resource_name = "DisparoLinaIzq"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [17, 18]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xc0mu"]
+_data = {
+"CaminarLina": SubResource("Animation_ffte3"),
+"CaminarLinaIzq": SubResource("Animation_dk60f"),
+"DisparoLina": SubResource("Animation_7w3y1"),
+"DisparoLinaIzq": SubResource("Animation_0jb4e"),
+"Normal": SubResource("Animation_1vtyt"),
+"RESET": SubResource("Animation_8vsd6")
+}
+
+[node name="PlayerLina" type="CharacterBody2D"]
+script = ExtResource("1_p6be2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_rkujc")
+hframes = 23
+frame = 9
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.91853, 22.0346)
+shape = SubResource("CircleShape2D_ql8m2")
+
+[node name="Animaciones" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_xc0mu")
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]

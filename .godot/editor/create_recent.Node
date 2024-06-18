@@ -1,0 +1,6 @@
+CollisionShape2D
+Camera2D
+AnimationPlayer
+Sprite2D
+CharacterBody2D
+StaticBody2D

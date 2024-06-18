@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqi1l5d1raj3l"]
+
+[ext_resource type="Texture2D" uid="uid://dtdwqgvetil4g" path="res://Stuff/Utileria/2 Horizontal.png" id="1_fuesa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ryrcy"]
+size = Vector2(84, 42)
+
+[node name="2Horizontal" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_fuesa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ryrcy")

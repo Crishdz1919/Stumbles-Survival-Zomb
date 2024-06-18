@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3cmxxeb6e342"]
+
+[ext_resource type="Texture2D" uid="uid://brtn4kftlg1s3" path="res://Stuff/Utileria/techox5MH.png" id="1_pf8en"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o7us1"]
+size = Vector2(41, 208.5)
+
+[node name="techox5MH" type="StaticBody2D"]
+position = Vector2(19, 38)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(505, 224)
+texture = ExtResource("1_pf8en")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(505.5, 224.75)
+shape = SubResource("RectangleShape2D_o7us1")

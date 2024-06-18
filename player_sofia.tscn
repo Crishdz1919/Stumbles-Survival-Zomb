@@ -1,0 +1,133 @@
+[gd_scene load_steps=11 format=3 uid="uid://bxq1mg3m2l2b3"]
+
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_o11cm"]
+[ext_resource type="Texture2D" uid="uid://g6raqspr7xu4" path="res://Personajes/spritesSofia.png" id="1_ve21a"]
+
+[sub_resource type="Animation" id="Animation_xa4vm"]
+resource_name = "CaminarSofia"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [11, 12, 14, 11, 12, 14]
+}
+
+[sub_resource type="Animation" id="Animation_uiq1n"]
+resource_name = "CaminarSofiaIzq"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [3, 4, 6, 3, 4, 6]
+}
+
+[sub_resource type="Animation" id="Animation_ibgu5"]
+resource_name = "Normal"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [20]
+}
+
+[sub_resource type="Animation" id="Animation_blno8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="Animation" id="Animation_qkqbu"]
+resource_name = "DisparoSofia"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [18, 19]
+}
+
+[sub_resource type="Animation" id="Animation_dgrde"]
+resource_name = "DisparoSofiaIzq"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [16, 17]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2p1le"]
+_data = {
+"CaminarSofia": SubResource("Animation_xa4vm"),
+"CaminarSofiaIzq": SubResource("Animation_uiq1n"),
+"DisparoSofia": SubResource("Animation_qkqbu"),
+"DisparoSofiaIzq": SubResource("Animation_dgrde"),
+"Normal": SubResource("Animation_ibgu5"),
+"RESET": SubResource("Animation_blno8")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b8uhi"]
+radius = 63.8181
+
+[node name="PlayerSofia" type="CharacterBody2D"]
+script = ExtResource("1_o11cm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ve21a")
+hframes = 23
+frame = 4
+
+[node name="Animaciones" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_2p1le")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.00694, 20.2494)
+scale = Vector2(0.527645, -0.540037)
+shape = SubResource("CircleShape2D_b8uhi")
+
+[node name="Camera2D" type="Camera2D" parent="."]

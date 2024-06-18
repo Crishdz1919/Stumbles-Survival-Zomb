@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bble5dxtfo8xx"]
+
+[ext_resource type="Texture2D" uid="uid://cl32lg0lcwav" path="res://Stuff/Utileria/2 VERTICLA.png" id="1_o6f4h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l5t3n"]
+size = Vector2(42, 84)
+
+[node name="2Vertical" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_o6f4h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_l5t3n")
