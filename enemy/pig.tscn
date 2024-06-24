@@ -1,0 +1,83 @@
+[gd_scene load_steps=14 format=3 uid="uid://c7tcxwpkj0ax5"]
+
+[ext_resource type="Script" path="res://pig.gd" id="1_vrbxr"]
+[ext_resource type="Texture2D" uid="uid://dvojtp2l1qny6" path="res://enemy/Zombie1/animation/Dead4.png" id="5_lpdjo"]
+[ext_resource type="Texture2D" uid="uid://ctw7lnlwyfp4a" path="res://enemy/Zombie1/animation/Dead5.png" id="6_vsr1l"]
+[ext_resource type="Texture2D" uid="uid://ct1bbr6roeuag" path="res://enemy/Zombie1/animation/Dead7.png" id="8_jd8ve"]
+[ext_resource type="Texture2D" uid="uid://biheof31conjd" path="res://enemy/Zombie1/animation/Walk2.png" id="10_fyrnh"]
+[ext_resource type="Texture2D" uid="uid://ksglyjwddfik" path="res://enemy/Zombie1/animation/Walk1.png" id="10_pg47m"]
+[ext_resource type="Texture2D" uid="uid://dh2kwbus68nt8" path="res://enemy/Zombie1/animation/Walk3.png" id="11_bbabi"]
+[ext_resource type="Texture2D" uid="uid://duquhrabtl4l5" path="res://enemy/Zombie1/animation/Walk4.png" id="12_p4i6u"]
+[ext_resource type="Texture2D" uid="uid://dkwqra6jmxh37" path="res://enemy/Zombie1/animation/Walk5.png" id="13_jahcd"]
+[ext_resource type="Texture2D" uid="uid://b8q6lffe8usie" path="res://enemy/Zombie1/animation/Walk6.png" id="14_54i3j"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dcuo7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_lpdjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_vsr1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jd8ve")
+}],
+"loop": false,
+"name": &"Dead",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_pg47m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_fyrnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_bbabi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_p4i6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_jahcd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_54i3j")
+}],
+"loop": true,
+"name": &"run",
+"speed": 4.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nxfxx"]
+size = Vector2(21.1846, 24.5505)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_avd4b"]
+size = Vector2(3.51613, 25.4816)
+
+[node name="pig" type="CharacterBody2D" groups=["ene"]]
+texture_filter = 1
+scale = Vector2(0.434755, 0.414977)
+script = ExtResource("1_vrbxr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(13.8867, 12.7408)
+scale = Vector2(0.130319, 0.101648)
+sprite_frames = SubResource("SpriteFrames_dcuo7")
+animation = &"run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10.5923, 12.7408)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_nxfxx")
+
+[node name="atac" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="atac"]
+position = Vector2(15.6448, 12.7408)
+scale = Vector2(1, 0.999999)
+shape = SubResource("RectangleShape2D_avd4b")
+
+[connection signal="body_entered" from="atac" to="." method="_on_atac_body_entered"]

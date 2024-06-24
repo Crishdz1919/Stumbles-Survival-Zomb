@@ -1,0 +1,155 @@
+[gd_scene load_steps=15 format=3 uid="uid://dqkrbn76wcaw1"]
+
+[ext_resource type="Script" path="res://personaje/character_body_2d.gd" id="1_lac03"]
+[ext_resource type="Texture2D" uid="uid://d2xe0e0xipvi2" path="res://33/personaje/marcos poses/Disparos/Disparo 1.png" id="2_3d355"]
+[ext_resource type="Texture2D" uid="uid://c5bcsopinsa0b" path="res://33/personaje/marcos poses/Disparos/disparo2.png" id="3_b4wic"]
+[ext_resource type="Texture2D" uid="uid://cl0d7ugc5ob5n" path="res://33/personaje/marcos poses/Salto.png" id="4_aa8xn"]
+[ext_resource type="Texture2D" uid="uid://dp2s7hahaauxg" path="res://33/personaje/marcos poses/normal.png" id="5_0ekp0"]
+[ext_resource type="Texture2D" uid="uid://db8anipawu27x" path="res://33/personaje/marcos poses/caminar/character_maleAdventurer_walk3.png" id="6_gt4di"]
+[ext_resource type="Texture2D" uid="uid://58wmufbchaun" path="res://33/personaje/marcos poses/caminar/character_maleAdventurer_walk1.png" id="7_ai5bq"]
+[ext_resource type="Texture2D" uid="uid://bv2md2pjjpots" path="res://33/personaje/marcos poses/caminar/character_maleAdventurer_walk2.png" id="8_l174b"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vbfjt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3d355")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_b4wic")
+}],
+"loop": true,
+"name": &"atacar",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_aa8xn")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_0ekp0")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_aa8xn")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_gt4di")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ai5bq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_l174b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_gt4di")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ai5bq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_l174b")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sisc5"]
+size = Vector2(18, 23)
+
+[sub_resource type="Animation" id="Animation_0fy25"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_3d355")]
+}
+
+[sub_resource type="Animation" id="Animation_lfbi7"]
+resource_name = "atacar"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("2_3d355"), ExtResource("3_b4wic")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bbnnw"]
+_data = {
+"RESET": SubResource("Animation_0fy25"),
+"atacar": SubResource("Animation_lfbi7")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p8tr3"]
+size = Vector2(17, 6)
+
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_lac03")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1, -1)
+scale = Vector2(0.260417, 0.265625)
+sprite_frames = SubResource("SpriteFrames_vbfjt")
+animation = &"jump"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 3.5)
+shape = SubResource("RectangleShape2D_sisc5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(2, -1)
+scale = Vector2(0.270833, 0.265625)
+texture = ExtResource("2_3d355")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bbnnw")
+}
+speed_scale = 2.0
+
+[node name="attack" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="attack"]
+position = Vector2(13, 3)
+shape = SubResource("RectangleShape2D_p8tr3")
+disabled = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(2, -26)
+zoom = Vector2(2, 2)
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="body_entered" from="attack" to="." method="_on_attack_body_entered"]

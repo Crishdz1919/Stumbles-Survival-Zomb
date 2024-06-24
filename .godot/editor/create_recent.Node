@@ -1,6 +1,14 @@
-CollisionShape2D
-Camera2D
-AnimationPlayer
 Sprite2D
+Camera2D
+CollisionShape2D
+Area2D
+AnimationPlayer
+Label
+ColorRect
+CanvasLayer
+Timer
 CharacterBody2D
 StaticBody2D
+Node2D
+TileMap
+RayCast2D
