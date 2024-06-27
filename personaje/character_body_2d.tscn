@@ -71,7 +71,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sisc5"]
-size = Vector2(18, 23)
+size = Vector2(1, 23)
 
 [sub_resource type="Animation" id="Animation_0fy25"]
 length = 0.001
@@ -124,7 +124,7 @@ sprite_frames = SubResource("SpriteFrames_vbfjt")
 animation = &"jump"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 3.5)
+position = Vector2(1, 4)
 shape = SubResource("RectangleShape2D_sisc5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -143,7 +143,7 @@ speed_scale = 2.0
 [node name="attack" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="attack"]
-position = Vector2(13, 3)
+position = Vector2(13, 4)
 shape = SubResource("RectangleShape2D_p8tr3")
 disabled = true
 

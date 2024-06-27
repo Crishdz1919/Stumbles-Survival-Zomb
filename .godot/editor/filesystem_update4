@@ -1,10 +1,7 @@
+res://mundo/mundo_3.tscn
 res://personaje/character_body_2d.tscn
 res://mundo/prueba.tscn
 res://mundo.tscn
-res://mundo/mundo_3.tscn
 res://enemy/pig.tscn
 res://gameover.tscn
-res://trans.tscn
 res://personaje/character_body_2d.gd
-res://mundo.gd
-res://pig.gd

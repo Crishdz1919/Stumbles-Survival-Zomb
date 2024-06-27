@@ -13,5 +13,5 @@ func _process(delta):
 
 
 func _on_timer_timeout():
-	Trans.change_scene("res://mundo_2.tscn")
+	Trans.change_scene("res://mundo_3.tscn")
 	pass # Replace with function body.
