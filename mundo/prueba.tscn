@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://ixnith5qyo2v"]
+[gd_scene load_steps=6 format=3 uid="uid://ixnith5qyo2v"]
 
 [ext_resource type="Texture2D" uid="uid://dya42t5o0pmat" path="res://33/objetos/Escenario fondo.png" id="1_bnhyd"]
 [ext_resource type="Texture2D" uid="uid://c3mqoxeuwny88" path="res://33/prueba/nieve.png" id="5_1neet"]
 [ext_resource type="PackedScene" uid="uid://dqkrbn76wcaw1" path="res://personaje/character_body_2d.tscn" id="6_ea4we"]
-[ext_resource type="PackedScene" uid="uid://c7tcxwpkj0ax5" path="res://enemy/pig.tscn" id="8_htovc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0ul42"]
 texture = ExtResource("5_1neet")
@@ -175,14 +174,6 @@ layer_0/tile_data = PackedInt32Array(2162689, 131072, 2, 1310738, 131072, 5, 131
 [node name="CharacterBody2D" parent="." instance=ExtResource("6_ea4we")]
 position = Vector2(531, 549)
 scale = Vector2(1.6, 1.6)
-
-[node name="pig" parent="." instance=ExtResource("8_htovc")]
-position = Vector2(1022, 536)
-scale = Vector2(1.2, 1.2)
-
-[node name="pig2" parent="." instance=ExtResource("8_htovc")]
-position = Vector2(441, 539)
-scale = Vector2(1.2, 1.192)
 
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false

@@ -1,0 +1,74 @@
+[gd_scene load_steps=12 format=3 uid="uid://c7tcxwpkj0ax5"]
+
+[ext_resource type="Script" path="res://zomb.gd" id="1_x6fx8"]
+[ext_resource type="Texture2D" uid="uid://ct1bbr6roeuag" path="res://enemy/Zombie1/animation/Dead7.png" id="2_ecwn5"]
+[ext_resource type="Texture2D" uid="uid://ksglyjwddfik" path="res://enemy/Zombie1/animation/Walk1.png" id="3_4ytp5"]
+[ext_resource type="Texture2D" uid="uid://biheof31conjd" path="res://enemy/Zombie1/animation/Walk2.png" id="4_fa10o"]
+[ext_resource type="Texture2D" uid="uid://dh2kwbus68nt8" path="res://enemy/Zombie1/animation/Walk3.png" id="5_7cjg5"]
+[ext_resource type="Texture2D" uid="uid://duquhrabtl4l5" path="res://enemy/Zombie1/animation/Walk4.png" id="6_1nykc"]
+[ext_resource type="Texture2D" uid="uid://dkwqra6jmxh37" path="res://enemy/Zombie1/animation/Walk5.png" id="7_kddyk"]
+[ext_resource type="Texture2D" uid="uid://b8q6lffe8usie" path="res://enemy/Zombie1/animation/Walk6.png" id="8_2208g"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dcuo7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ecwn5")
+}],
+"loop": false,
+"name": &"Dead",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_4ytp5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fa10o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7cjg5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1nykc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_kddyk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2208g")
+}],
+"loop": true,
+"name": &"run",
+"speed": 4.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nxfxx"]
+size = Vector2(4.60029, 31.6566)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_avd4b"]
+size = Vector2(6.90044, 24.1842)
+
+[node name="zomb" type="CharacterBody2D" groups=["ene"]]
+texture_filter = 1
+scale = Vector2(0.434755, 0.414977)
+script = ExtResource("1_x6fx8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(13.8009, -7.22931)
+scale = Vector2(0.130319, 0.101648)
+sprite_frames = SubResource("SpriteFrames_dcuo7")
+animation = &"run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(13.8009, -4.81954)
+shape = SubResource("RectangleShape2D_nxfxx")
+
+[node name="atac" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="atac"]
+position = Vector2(13.8009, -7.22932)
+scale = Vector2(1, 0.999999)
+shape = SubResource("RectangleShape2D_avd4b")
+
+[connection signal="body_entered" from="atac" to="." method="_on_atac_body_entered"]

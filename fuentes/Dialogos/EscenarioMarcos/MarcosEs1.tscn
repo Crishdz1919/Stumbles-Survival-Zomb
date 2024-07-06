@@ -1,0 +1,93 @@
+[gd_scene load_steps=7 format=3 uid="uid://deodrlyibo050"]
+
+[ext_resource type="Script" path="res://fuentes/Dialogos/EscenarioMarcos/MarcosEs1.gd" id="1_pnd15"]
+[ext_resource type="Texture2D" uid="uid://b7brxaq8vff1a" path="res://33/Leyendas/Marcos/Escena1Marcos.png" id="2_tig7l"]
+[ext_resource type="Texture2D" uid="uid://dkhc0wqj22gvo" path="res://33/personaje/marcos poses/sentado.png" id="3_4dsdd"]
+[ext_resource type="Texture2D" uid="uid://ddqiokguac1mw" path="res://33/Leyendas/Leyenda1.png" id="4_g86ix"]
+[ext_resource type="FontFile" uid="uid://bu7d7qqv3lvh8" path="res://fuentes/pixelart.ttf" id="4_rb3hj"]
+[ext_resource type="Texture2D" uid="uid://0gepb73gvssl" path="res://33/botones/NextText.png" id="6_1b18b"]
+
+[node name="menu" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_pnd15")
+
+[node name="fondo" type="Node2D" parent="."]
+texture_filter = 1
+position = Vector2(577, 322)
+scale = Vector2(3.5, 3.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="fondo"]
+position = Vector2(21.4286, -53.4286)
+scale = Vector2(0.3, 0.329)
+texture = ExtResource("2_tig7l")
+
+[node name="Sprite2D2" type="Sprite2D" parent="fondo"]
+position = Vector2(5.75185e-06, 33.2678)
+scale = Vector2(0.271349, 0.34227)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 858.0
+offset_top = 81.0
+offset_right = 1041.0
+offset_bottom = 211.0
+
+[node name="Sentado" type="Sprite2D" parent="."]
+position = Vector2(745, 502)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("3_4dsdd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(462, 534.289)
+scale = Vector2(0.387991, 0.537971)
+texture = ExtResource("4_g86ix")
+
+[node name="Button" type="Button" parent="Sprite2D"]
+offset_left = 505.167
+offset_top = 96.1228
+offset_right = 1025.17
+offset_bottom = 616.123
+scale = Vector2(0.257318, 0.165897)
+theme_override_colors/font_color = Color(0.541176, 1, 0.960784, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0.729412, 1)
+theme_override_fonts/font = ExtResource("4_rb3hj")
+theme_override_font_sizes/font_size = 40
+icon = ExtResource("6_1b18b")
+
+[node name="Button" type="Button" parent="Sprite2D/Button"]
+offset_left = 505.167
+offset_top = 96.1228
+offset_right = 1025.17
+offset_bottom = 616.123
+scale = Vector2(0.257318, 0.165897)
+theme_override_colors/font_color = Color(0.541176, 1, 0.960784, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0.729412, 1)
+theme_override_fonts/font = ExtResource("4_rb3hj")
+theme_override_font_sizes/font_size = 40
+icon = ExtResource("6_1b18b")
+
+[node name="TextEdit" type="TextEdit" parent="Sprite2D"]
+offset_left = -603.0
+offset_top = -80.0
+offset_right = 423.0
+offset_bottom = 167.0
+theme_override_fonts/font = ExtResource("4_rb3hj")
+theme_override_font_sizes/font_size = 39
+text = "¿rugidos? 
+
+Ha-ha se escuchan como zombis."
+
+[node name="TextEdit2" type="TextEdit" parent="Sprite2D"]
+texture_filter = 1
+offset_left = -637.0
+offset_top = -194.0
+offset_right = -281.0
+offset_bottom = -114.0
+scale = Vector2(0.914539, 1)
+theme_override_colors/background_color = Color(0, 0, 0, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_rb3hj")
+theme_override_font_sizes/font_size = 50
+text = "   Marcos"
+
+[connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Sprite2D/Button/Button" to="." method="_on_button_pressed"]

@@ -1,7 +1,1 @@
-res://mundo/mundo_3.tscn
-res://personaje/character_body_2d.tscn
-res://mundo/prueba.tscn
-res://mundo.tscn
-res://enemy/pig.tscn
-res://gameover.tscn
-res://personaje/character_body_2d.gd
+res://fuentes/Dialogos/EscenarioAlex/AlexEs3.tscn

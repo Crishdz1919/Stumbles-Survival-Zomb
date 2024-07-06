@@ -1,0 +1,157 @@
+[gd_scene load_steps=17 format=3 uid="uid://ci8phv3uiernx"]
+
+[ext_resource type="Script" path="res://personaje/character_body_2d.gd" id="1_aoe6j"]
+[ext_resource type="Texture2D" uid="uid://deare6va0b471" path="res://33/personaje/Alex/Disparo1.png" id="2_sh64c"]
+[ext_resource type="Texture2D" uid="uid://n81tt0i52vww" path="res://33/personaje/Alex/Alex dispara.png" id="3_lasyr"]
+[ext_resource type="Texture2D" uid="uid://cf31i8fgw0ibp" path="res://33/personaje/Alex/Salto.png" id="4_6amuv"]
+[ext_resource type="Texture2D" uid="uid://c4c8ph5hwx1ws" path="res://33/personaje/Alex/Alex Normal.png" id="5_pwu8n"]
+[ext_resource type="Texture2D" uid="uid://cu3maym7asayk" path="res://33/personaje/Alex/Alex camina/Alex- camina -3.png" id="6_r5gd7"]
+[ext_resource type="Texture2D" uid="uid://b8pwegqyb3tu8" path="res://33/personaje/Alex/Alex camina/Alex- camina -4.png" id="7_docuo"]
+[ext_resource type="Texture2D" uid="uid://o4oj5ryr80bj" path="res://33/personaje/Alex/Alex camina/Alex- camina -6.png" id="8_ftluy"]
+[ext_resource type="Texture2D" uid="uid://d2xe0e0xipvi2" path="res://33/personaje/marcos poses/Disparos/Disparo 1.png" id="9_vwmn7"]
+[ext_resource type="Texture2D" uid="uid://c5bcsopinsa0b" path="res://33/personaje/marcos poses/Disparos/disparo2.png" id="10_bm25r"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vbfjt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_sh64c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lasyr")
+}],
+"loop": true,
+"name": &"atacar",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_6amuv")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_pwu8n")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_6amuv")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_r5gd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_docuo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ftluy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_r5gd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_docuo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ftluy")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sisc5"]
+size = Vector2(1, 23)
+
+[sub_resource type="Animation" id="Animation_0fy25"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_sh64c")]
+}
+
+[sub_resource type="Animation" id="Animation_lfbi7"]
+resource_name = "atacar"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("9_vwmn7"), ExtResource("10_bm25r")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bbnnw"]
+_data = {
+"RESET": SubResource("Animation_0fy25"),
+"atacar": SubResource("Animation_lfbi7")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p8tr3"]
+size = Vector2(17, 6)
+
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_aoe6j")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1, -1)
+scale = Vector2(0.260417, 0.265625)
+sprite_frames = SubResource("SpriteFrames_vbfjt")
+animation = &"run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 4)
+shape = SubResource("RectangleShape2D_sisc5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(2, -1)
+scale = Vector2(0.270833, 0.265625)
+texture = ExtResource("2_sh64c")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bbnnw")
+}
+speed_scale = 2.0
+
+[node name="attack" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="attack"]
+position = Vector2(13, 4)
+shape = SubResource("RectangleShape2D_p8tr3")
+disabled = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(2, -26)
+zoom = Vector2(2, 2)
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="body_entered" from="attack" to="." method="_on_attack_body_entered"]

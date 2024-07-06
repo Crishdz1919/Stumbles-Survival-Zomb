@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7qt7jd7678vh"]
+
+[ext_resource type="Texture2D" uid="uid://b7brxaq8vff1a" path="res://33/Leyendas/Marcos/Escena1Marcos.png" id="1_kihhm"]
+[ext_resource type="Texture2D" uid="uid://dkhc0wqj22gvo" path="res://33/personaje/marcos poses/sentado.png" id="2_3qtej"]
+[ext_resource type="Texture2D" uid="uid://ddqiokguac1mw" path="res://33/Leyendas/Leyenda1.png" id="3_7i7yo"]
+[ext_resource type="FontFile" uid="uid://bu7d7qqv3lvh8" path="res://fuentes/pixelart.ttf" id="4_m4elt"]
+
+[node name="Escenario1Marco" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(715, 257)
+texture = ExtResource("1_kihhm")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(95, 312)
+scale = Vector2(0.729167, 0.671875)
+texture = ExtResource("2_3qtej")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(72, 387)
+scale = Vector2(0.311393, 0.408397)
+texture = ExtResource("3_7i7yo")
+
+[node name="TextEdit1" type="TextEdit" parent="Sprite2D/Sprite2D"]
+texture_filter = 1
+offset_left = -616.584
+offset_top = -176.299
+offset_right = -327.584
+offset_bottom = -115.299
+theme_override_colors/font_color = Color(0.894922, 0.894922, 0.894922, 1)
+theme_override_fonts/font = ExtResource("4_m4elt")
+theme_override_font_sizes/font_size = 36
+text = "     Marcos"
+metadata/_edit_use_anchors_ = true
+
+[node name="TextEdit2" type="TextEdit" parent="Sprite2D/Sprite2D"]
+texture_filter = 1
+offset_left = -562.0
+offset_right = 356.0
+offset_bottom = 140.0
+theme_override_fonts/font = ExtResource("4_m4elt")
+theme_override_font_sizes/font_size = 32
+text = "Rugidos...
+
+Ha ha, se escuchan como zombis."
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+position = Vector2(5, 168)

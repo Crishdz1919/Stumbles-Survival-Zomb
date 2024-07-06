@@ -1,0 +1,105 @@
+[gd_scene load_steps=10 format=3 uid="uid://e5ldnljgpnfi"]
+
+[ext_resource type="Script" path="res://fuentes/Dialogos/EscenarioAlex/AlexEs3.gd" id="1_3d5kb"]
+[ext_resource type="Texture2D" uid="uid://b7brxaq8vff1a" path="res://33/Leyendas/Marcos/Escena1Marcos.png" id="2_wb7qq"]
+[ext_resource type="Texture2D" uid="uid://cn1q3t1qppmcp" path="res://33/objetos/Saloness/MapaAlex.png" id="3_f0x0r"]
+[ext_resource type="Texture2D" uid="uid://n81tt0i52vww" path="res://33/personaje/Alex/Alex dispara.png" id="4_4ovxw"]
+[ext_resource type="Texture2D" uid="uid://ctw7lnlwyfp4a" path="res://enemy/Zombie1/animation/Dead5.png" id="5_yawty"]
+[ext_resource type="FontFile" uid="uid://bu7d7qqv3lvh8" path="res://fuentes/pixelart.ttf" id="7_s14eo"]
+[ext_resource type="Texture2D" uid="uid://cebm2b3npbwt1" path="res://enemy/Zombie1/animation/Dead3.png" id="8_8k7cc"]
+[ext_resource type="Texture2D" uid="uid://ddqiokguac1mw" path="res://33/Leyendas/Leyenda1.png" id="8_srrk0"]
+[ext_resource type="Texture2D" uid="uid://0gepb73gvssl" path="res://33/botones/NextText.png" id="9_igqye"]
+
+[node name="menu" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_3d5kb")
+
+[node name="fondo" type="Node2D" parent="."]
+texture_filter = 1
+position = Vector2(577, 322)
+scale = Vector2(3.5, 3.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="fondo"]
+position = Vector2(21.4286, -53.4286)
+scale = Vector2(0.3, 0.329)
+texture = ExtResource("2_wb7qq")
+
+[node name="salon" type="Sprite2D" parent="fondo"]
+position = Vector2(-8.42857, 7.28571)
+scale = Vector2(0.202929, 0.190898)
+texture = ExtResource("3_f0x0r")
+
+[node name="Sprite2D2" type="Sprite2D" parent="fondo"]
+position = Vector2(25.4286, 56)
+scale = Vector2(0.266667, 0.25)
+texture = ExtResource("4_4ovxw")
+
+[node name="Sprite2D4" type="Sprite2D" parent="fondo"]
+position = Vector2(97.7143, 61.7143)
+scale = Vector2(0.0826003, 0.0629811)
+texture = ExtResource("5_yawty")
+
+[node name="Sprite2D5" type="Sprite2D" parent="fondo"]
+position = Vector2(43.1429, 61.4286)
+scale = Vector2(0.0826003, 0.0629811)
+texture = ExtResource("8_8k7cc")
+
+[node name="Sprite2D6" type="Sprite2D" parent="fondo"]
+position = Vector2(80, 64.2857)
+scale = Vector2(0.0826003, 0.0629811)
+texture = ExtResource("5_yawty")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 858.0
+offset_top = 81.0
+offset_right = 1041.0
+offset_bottom = 211.0
+
+[node name="Sentado" type="Sprite2D" parent="."]
+position = Vector2(745, 502)
+scale = Vector2(0.9, 0.9)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(330, 454)
+scale = Vector2(0.387991, 0.537971)
+texture = ExtResource("8_srrk0")
+
+[node name="Button" type="Button" parent="Sprite2D"]
+offset_left = 505.167
+offset_top = 96.1228
+offset_right = 1025.17
+offset_bottom = 616.123
+scale = Vector2(0.257318, 0.165897)
+theme_override_colors/font_color = Color(0.541176, 1, 0.960784, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0.729412, 1)
+theme_override_fonts/font = ExtResource("7_s14eo")
+theme_override_font_sizes/font_size = 40
+icon = ExtResource("9_igqye")
+
+[node name="TextEdit" type="TextEdit" parent="Sprite2D"]
+texture_filter = 1
+offset_left = -613.0
+offset_top = -80.0
+offset_right = 387.0
+offset_bottom = 167.0
+theme_override_fonts/font = ExtResource("7_s14eo")
+theme_override_font_sizes/font_size = 39
+text = "Parece ser que uno de los
+compañeros quiere que
+hagamos equipo para librarnos
+de esto, tiene suerte de tenerme"
+
+[node name="TextEdit2" type="TextEdit" parent="Sprite2D"]
+texture_filter = 1
+offset_left = -637.0
+offset_top = -194.0
+offset_right = -281.0
+offset_bottom = -114.0
+scale = Vector2(0.914539, 1)
+theme_override_colors/background_color = Color(0, 0, 0, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_s14eo")
+theme_override_font_sizes/font_size = 50
+text = "   alex"
+
+[connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]
