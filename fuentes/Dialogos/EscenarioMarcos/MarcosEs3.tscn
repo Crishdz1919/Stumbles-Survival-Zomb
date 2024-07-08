@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cyxpwa5x6hay8"]
+[gd_scene load_steps=9 format=3 uid="uid://cyxpwa5x6hay8"]
 
 [ext_resource type="Script" path="res://fuentes/Dialogos/EscenarioMarcos/MarcosEs3.gd" id="1_oa7pc"]
 [ext_resource type="Texture2D" uid="uid://b7brxaq8vff1a" path="res://33/Leyendas/Marcos/Escena1Marcos.png" id="2_gt7h8"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://ddqiokguac1mw" path="res://33/Leyendas/Leyenda1.png" id="5_m0vnv"]
 [ext_resource type="FontFile" uid="uid://bu7d7qqv3lvh8" path="res://fuentes/pixelart.ttf" id="6_6soa3"]
 [ext_resource type="Texture2D" uid="uid://0gepb73gvssl" path="res://33/botones/NextText.png" id="7_dfopj"]
+[ext_resource type="AudioStream" uid="uid://crsydt0rhpuo7" path="res://33/Sonidos/golpeAlexMarcos.mp3" id="8_rr724"]
 
 [node name="menu" type="Node2D"]
 process_mode = 3
@@ -83,5 +84,9 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("6_6soa3")
 theme_override_font_sizes/font_size = 50
 text = "   Marcos"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_rr724")
+autoplay = true
 
 [connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]

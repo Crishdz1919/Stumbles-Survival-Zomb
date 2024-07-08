@@ -1,24 +1,25 @@
-[gd_scene load_steps=17 format=3 uid="uid://ci8phv3uiernx"]
+[gd_scene load_steps=18 format=3 uid="uid://ci8phv3uiernx"]
 
-[ext_resource type="Script" path="res://personaje/character_body_2d.gd" id="1_aoe6j"]
+[ext_resource type="Script" path="res://personaje/character_body_2dSofia.gd" id="1_aoe6j"]
+[ext_resource type="Texture2D" uid="uid://y6w1a714tx5n" path="res://33/personaje/Sofia/dispara1.png" id="2_pfaqn"]
 [ext_resource type="Texture2D" uid="uid://deare6va0b471" path="res://33/personaje/Alex/Disparo1.png" id="2_sh64c"]
-[ext_resource type="Texture2D" uid="uid://n81tt0i52vww" path="res://33/personaje/Alex/Alex dispara.png" id="3_lasyr"]
-[ext_resource type="Texture2D" uid="uid://cf31i8fgw0ibp" path="res://33/personaje/Alex/Salto.png" id="4_6amuv"]
-[ext_resource type="Texture2D" uid="uid://c4c8ph5hwx1ws" path="res://33/personaje/Alex/Alex Normal.png" id="5_pwu8n"]
-[ext_resource type="Texture2D" uid="uid://cu3maym7asayk" path="res://33/personaje/Alex/Alex camina/Alex- camina -3.png" id="6_r5gd7"]
-[ext_resource type="Texture2D" uid="uid://b8pwegqyb3tu8" path="res://33/personaje/Alex/Alex camina/Alex- camina -4.png" id="7_docuo"]
-[ext_resource type="Texture2D" uid="uid://o4oj5ryr80bj" path="res://33/personaje/Alex/Alex camina/Alex- camina -6.png" id="8_ftluy"]
-[ext_resource type="Texture2D" uid="uid://d2xe0e0xipvi2" path="res://33/personaje/marcos poses/Disparos/Disparo 1.png" id="9_vwmn7"]
-[ext_resource type="Texture2D" uid="uid://c5bcsopinsa0b" path="res://33/personaje/marcos poses/Disparos/disparo2.png" id="10_bm25r"]
+[ext_resource type="Texture2D" uid="uid://du7xcky1j68oo" path="res://33/personaje/Sofia/dispara2.png" id="3_1svdb"]
+[ext_resource type="Texture2D" uid="uid://dw0q7ecfpfpui" path="res://33/personaje/Sofia/jump.png" id="4_3jjvu"]
+[ext_resource type="Texture2D" uid="uid://btjwxoh8bvftn" path="res://33/personaje/Sofia/normal.png" id="5_ay5mk"]
+[ext_resource type="Texture2D" uid="uid://4y542fi8tg6h" path="res://33/personaje/Sofia/camina/SofiaCamina1.png" id="6_fms5e"]
+[ext_resource type="Texture2D" uid="uid://d1co6gmqkacy8" path="res://33/personaje/Sofia/camina/SofiaCamina2.png" id="7_db5tj"]
+[ext_resource type="Texture2D" uid="uid://bn0njco73ighe" path="res://33/personaje/Sofia/camina/SofiaCamina3.png" id="8_ama0o"]
+[ext_resource type="Texture2D" uid="uid://drcqo5ofgj2ec" path="res://33/impact/fuego.png" id="10_g75ow"]
+[ext_resource type="AudioStream" uid="uid://bptlimyx5ofmp" path="res://33/Sonidos/DisparoSofia.wav" id="11_0yg55"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vbfjt"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_sh64c")
+"texture": ExtResource("2_pfaqn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_lasyr")
+"texture": ExtResource("3_1svdb")
 }],
 "loop": true,
 "name": &"atacar",
@@ -26,7 +27,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_6amuv")
+"texture": ExtResource("4_3jjvu")
 }],
 "loop": true,
 "name": &"fall",
@@ -34,7 +35,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_pwu8n")
+"texture": ExtResource("5_ay5mk")
 }],
 "loop": true,
 "name": &"idle",
@@ -42,7 +43,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_6amuv")
+"texture": ExtResource("4_3jjvu")
 }],
 "loop": true,
 "name": &"jump",
@@ -50,22 +51,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_r5gd7")
+"texture": ExtResource("6_fms5e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_docuo")
+"texture": ExtResource("7_db5tj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_ftluy")
+"texture": ExtResource("8_ama0o")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_r5gd7")
+"texture": ExtResource("6_fms5e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_docuo")
+"texture": ExtResource("7_db5tj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_ftluy")
+"texture": ExtResource("8_ama0o")
 }],
 "loop": true,
 "name": &"run",
@@ -100,10 +101,10 @@ tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.1, 0.5),
+"times": PackedFloat32Array(0, 0.4),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("9_vwmn7"), ExtResource("10_bm25r")]
+"values": [ExtResource("2_pfaqn"), ExtResource("3_1svdb")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bbnnw"]
@@ -118,12 +119,18 @@ size = Vector2(17, 6)
 [node name="CharacterBody2D" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_aoe6j")
 
+[node name="fuego" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(19, 3)
+scale = Vector2(0.203598, 0.101563)
+texture = ExtResource("10_g75ow")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(1, -1)
 scale = Vector2(0.260417, 0.265625)
 sprite_frames = SubResource("SpriteFrames_vbfjt")
-animation = &"run"
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 4)
@@ -152,6 +159,10 @@ disabled = true
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(2, -26)
 zoom = Vector2(2, 2)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_0yg55")
+volume_db = -27.0
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="body_entered" from="attack" to="." method="_on_attack_body_entered"]

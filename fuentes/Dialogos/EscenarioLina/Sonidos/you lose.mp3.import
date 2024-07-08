@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgd4p7rb4g6sc"
+path="res://.godot/imported/you lose.mp3-31a9eadbedcc5a6d09da1b455df6d832.mp3str"
+
+[deps]
+
+source_file="res://fuentes/Dialogos/EscenarioLina/Sonidos/you lose.mp3"
+dest_files=["res://.godot/imported/you lose.mp3-31a9eadbedcc5a6d09da1b455df6d832.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://rr7hi4opn8ch"
+path="res://.godot/imported/Gritos largos.mp3-7d6f77e5bc37745ab8ed2fb2ad9dfc10.mp3str"
+
+[deps]
+
+source_file="res://fuentes/Dialogos/EscenarioLina/Sonidos/Gritos largos.mp3"
+dest_files=["res://.godot/imported/Gritos largos.mp3-7d6f77e5bc37745ab8ed2fb2ad9dfc10.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

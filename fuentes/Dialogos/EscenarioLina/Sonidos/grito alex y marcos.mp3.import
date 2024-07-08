@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bp4rg0jf6djin"
+path="res://.godot/imported/grito alex y marcos.mp3-4565badba86d2fd2ae36460c9567c8bd.mp3str"
+
+[deps]
+
+source_file="res://fuentes/Dialogos/EscenarioLina/Sonidos/grito alex y marcos.mp3"
+dest_files=["res://.godot/imported/grito alex y marcos.mp3-4565badba86d2fd2ae36460c9567c8bd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

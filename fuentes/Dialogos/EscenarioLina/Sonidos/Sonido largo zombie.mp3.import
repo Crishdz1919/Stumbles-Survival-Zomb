@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2o11tph2t8o2"
+path="res://.godot/imported/Sonido largo zombie.mp3-9285e3bd83eadb55ef2a1bd7aef0d8ad.mp3str"
+
+[deps]
+
+source_file="res://fuentes/Dialogos/EscenarioLina/Sonidos/Sonido largo zombie.mp3"
+dest_files=["res://.godot/imported/Sonido largo zombie.mp3-9285e3bd83eadb55ef2a1bd7aef0d8ad.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

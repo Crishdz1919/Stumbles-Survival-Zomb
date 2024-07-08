@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://tkebos7t7eml"
+path="res://.godot/imported/Sonido corto zombie.mp3-a5e7ad25098d2cd6266a7df6a48a0dd9.mp3str"
+
+[deps]
+
+source_file="res://fuentes/Dialogos/EscenarioLina/Sonidos/Sonido corto zombie.mp3"
+dest_files=["res://.godot/imported/Sonido corto zombie.mp3-a5e7ad25098d2cd6266a7df6a48a0dd9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

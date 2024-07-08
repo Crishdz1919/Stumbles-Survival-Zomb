@@ -1,5 +1,10 @@
-TextEdit
+AudioStreamPlayer
 Sprite2D
+AudioStreamPlayer2D
+AudioStreamPlayer3D
+Timer
+AudioListener2D
+TextEdit
 Button
 VBoxContainer
 TextureRect
@@ -7,8 +12,3 @@ Camera2D
 Label
 Control
 RichTextLabel
-CollisionShape2D
-Area2D
-AnimationPlayer
-ColorRect
-CanvasLayer

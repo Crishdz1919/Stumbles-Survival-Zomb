@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c62220e0ksm3c"
+path="res://.godot/imported/SONIDO MOTOSIERRA.mp3-7b2f234adc985b8cf41b9dc53f0045d5.mp3str"
+
+[deps]
+
+source_file="res://33/Sonidos/SONIDO MOTOSIERRA.mp3"
+dest_files=["res://.godot/imported/SONIDO MOTOSIERRA.mp3-7b2f234adc985b8cf41b9dc53f0045d5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

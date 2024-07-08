@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bq3kbh70kxq33"
+path="res://.godot/imported/WIN pixel.mp3-0b280fccaf8b871abdcddecfae379cb3.mp3str"
+
+[deps]
+
+source_file="res://fuentes/Dialogos/EscenarioLina/Sonidos/WIN pixel.mp3"
+dest_files=["res://.godot/imported/WIN pixel.mp3-0b280fccaf8b871abdcddecfae379cb3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

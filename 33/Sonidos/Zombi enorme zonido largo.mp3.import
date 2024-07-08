@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cj3tubm7ph3a5"
+path="res://.godot/imported/Zombi enorme zonido largo.mp3-27ba891eb1596604257727eb46679f2e.mp3str"
+
+[deps]
+
+source_file="res://33/Sonidos/Zombi enorme zonido largo.mp3"
+dest_files=["res://.godot/imported/Zombi enorme zonido largo.mp3-27ba891eb1596604257727eb46679f2e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://broeeywjh6mk8"]
+[gd_scene load_steps=9 format=3 uid="uid://broeeywjh6mk8"]
 
 [ext_resource type="Script" path="res://fuentes/Dialogos/EscenarioMarcos/MarcosEs2.gd" id="1_73yn3"]
 [ext_resource type="Texture2D" uid="uid://b7brxaq8vff1a" path="res://33/Leyendas/Marcos/Escena1Marcos.png" id="2_38nip"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dkwqra6jmxh37" path="res://enemy/Zombie1/animation/Walk5.png" id="4_exaui"]
 [ext_resource type="FontFile" uid="uid://bu7d7qqv3lvh8" path="res://fuentes/pixelart.ttf" id="5_inbfm"]
 [ext_resource type="Texture2D" uid="uid://0gepb73gvssl" path="res://33/botones/NextText.png" id="6_iul62"]
+[ext_resource type="AudioStream" uid="uid://0rnedyhmde6h" path="res://33/Sonidos/mover silla.wav" id="8_v4hvp"]
 
 [node name="menu" type="Node2D"]
 process_mode = 3
@@ -82,5 +83,10 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("5_inbfm")
 theme_override_font_sizes/font_size = 50
 text = "   Marcos"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_v4hvp")
+volume_db = -9.551
+autoplay = true
 
 [connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]

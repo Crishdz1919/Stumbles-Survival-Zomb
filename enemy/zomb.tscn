@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://c7tcxwpkj0ax5"]
+[gd_scene load_steps=13 format=3 uid="uid://c7tcxwpkj0ax5"]
 
 [ext_resource type="Script" path="res://zomb.gd" id="1_x6fx8"]
 [ext_resource type="Texture2D" uid="uid://ct1bbr6roeuag" path="res://enemy/Zombie1/animation/Dead7.png" id="2_ecwn5"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://duquhrabtl4l5" path="res://enemy/Zombie1/animation/Walk4.png" id="6_1nykc"]
 [ext_resource type="Texture2D" uid="uid://dkwqra6jmxh37" path="res://enemy/Zombie1/animation/Walk5.png" id="7_kddyk"]
 [ext_resource type="Texture2D" uid="uid://b8q6lffe8usie" path="res://enemy/Zombie1/animation/Walk6.png" id="8_2208g"]
+[ext_resource type="AudioStream" uid="uid://o31rreyk1y41" path="res://33/Sonidos/Sonido largo zombie.mp3" id="9_pjbb4"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dcuo7"]
 animations = [{
@@ -70,5 +71,10 @@ shape = SubResource("RectangleShape2D_nxfxx")
 position = Vector2(13.8009, -7.22932)
 scale = Vector2(1, 0.999999)
 shape = SubResource("RectangleShape2D_avd4b")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_pjbb4")
+volume_db = -42.393
+autoplay = true
 
 [connection signal="body_entered" from="atac" to="." method="_on_atac_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b2qu2dpjwi1tu"]
+[gd_scene load_steps=11 format=3 uid="uid://b2qu2dpjwi1tu"]
 
 [ext_resource type="Script" path="res://fuentes/Dialogos/EscenarioMarcos/MarcosEs5.gd" id="1_7mmco"]
 [ext_resource type="Texture2D" uid="uid://b7brxaq8vff1a" path="res://33/Leyendas/Marcos/Escena1Marcos.png" id="2_ik1r7"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://ddqiokguac1mw" path="res://33/Leyendas/Leyenda1.png" id="6_i528j"]
 [ext_resource type="FontFile" uid="uid://bu7d7qqv3lvh8" path="res://fuentes/pixelart.ttf" id="7_jg0hn"]
 [ext_resource type="Texture2D" uid="uid://0gepb73gvssl" path="res://33/botones/NextText.png" id="8_8ulr5"]
+[ext_resource type="AudioStream" uid="uid://bykhywgpg5v8m" path="res://33/Sonidos/Zombi enorme zonido corto.mp3" id="10_4rbya"]
 
 [node name="menu" type="Node2D"]
 process_mode = 3
@@ -96,5 +97,10 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("7_jg0hn")
 theme_override_font_sizes/font_size = 50
 text = "   Marcos"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_4rbya")
+volume_db = -11.96
+autoplay = true
 
 [connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]

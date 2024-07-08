@@ -9,6 +9,7 @@ func _ready():
 	velocity.x = -ZombRun
 	$AnimatedSprite2D.play("run")
 	
+	
 func _physics_process(_delta):
 	velocity.y += Gravedad
 	Dead()

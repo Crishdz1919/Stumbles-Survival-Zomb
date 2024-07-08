@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cg06b3qpldxve"]
+[gd_scene load_steps=7 format=3 uid="uid://cg06b3qpldxve"]
 
 [ext_resource type="Script" path="res://mundo.gd" id="1_g0itd"]
 [ext_resource type="Texture2D" uid="uid://b4diibdn1622c" path="res://33/prueba/ciel05.png" id="2_lcwb2"]
 [ext_resource type="Texture2D" uid="uid://c5dm64xo5t1lq" path="res://33/objetos/Inicio.png" id="3_isrli"]
 [ext_resource type="Texture2D" uid="uid://5b115ecwsscj" path="res://33/objetos/logo7.png" id="5_5nedj"]
 [ext_resource type="FontFile" uid="uid://bu7d7qqv3lvh8" path="res://fuentes/pixelart.ttf" id="6_08hnu"]
+[ext_resource type="AudioStream" uid="uid://ccyhujj3awh50" path="res://33/Sonidos/intro.mp3" id="6_nubn1"]
 
 [node name="menu" type="Node2D"]
 process_mode = 3
@@ -49,6 +50,10 @@ text = "Salir"
 position = Vector2(587, 226)
 scale = Vector2(0.201929, 0.17096)
 texture = ExtResource("5_5nedj")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_nubn1")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

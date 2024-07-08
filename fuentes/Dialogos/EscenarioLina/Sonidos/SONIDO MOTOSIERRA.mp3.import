@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://so5non0qjcmu"
+path="res://.godot/imported/SONIDO MOTOSIERRA.mp3-59261e67583cd2da129e28dee51b9a3a.mp3str"
+
+[deps]
+
+source_file="res://fuentes/Dialogos/EscenarioLina/Sonidos/SONIDO MOTOSIERRA.mp3"
+dest_files=["res://.godot/imported/SONIDO MOTOSIERRA.mp3-59261e67583cd2da129e28dee51b9a3a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

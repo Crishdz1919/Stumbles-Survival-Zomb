@@ -1,0 +1,116 @@
+[gd_scene load_steps=11 format=3 uid="uid://ctjdwyf20x4fk"]
+
+[ext_resource type="Script" path="res://fuentes/Dialogos/EscenarioLina/LinaEs1.gd" id="1_jhug8"]
+[ext_resource type="Texture2D" uid="uid://b7brxaq8vff1a" path="res://33/Leyendas/Marcos/Escena1Marcos.png" id="2_26wnj"]
+[ext_resource type="Texture2D" uid="uid://bvavwjmvqrtt6" path="res://33/objetos/Saloness/MapaLina.png" id="3_giwwa"]
+[ext_resource type="Texture2D" uid="uid://uqjaxcuvcw72" path="res://33/personaje/Lina/Lina dispara2.png" id="4_aymrh"]
+[ext_resource type="Texture2D" uid="uid://u2puohx6vph" path="res://33/Madera.png" id="5_152rc"]
+[ext_resource type="Texture2D" uid="uid://biheof31conjd" path="res://enemy/Zombie1/animation/Walk2.png" id="6_wi554"]
+[ext_resource type="Texture2D" uid="uid://ddqiokguac1mw" path="res://33/Leyendas/Leyenda1.png" id="7_qojw8"]
+[ext_resource type="FontFile" uid="uid://bu7d7qqv3lvh8" path="res://fuentes/pixelart.ttf" id="8_ixf75"]
+[ext_resource type="Texture2D" uid="uid://0gepb73gvssl" path="res://33/botones/NextText.png" id="9_ujoxq"]
+[ext_resource type="AudioStream" uid="uid://o31rreyk1y41" path="res://33/Sonidos/Sonido largo zombie.mp3" id="10_5dnu8"]
+
+[node name="menu" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_jhug8")
+
+[node name="fondo" type="Node2D" parent="."]
+texture_filter = 1
+position = Vector2(577, 322)
+scale = Vector2(3.5, 3.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="fondo"]
+position = Vector2(21.4286, -53.4286)
+scale = Vector2(0.3, 0.329)
+texture = ExtResource("2_26wnj")
+
+[node name="salon" type="Sprite2D" parent="fondo"]
+position = Vector2(-8.42858, 7.28572)
+scale = Vector2(0.212719, 0.223153)
+texture = ExtResource("3_giwwa")
+
+[node name="Sprite2D2" type="Sprite2D" parent="fondo"]
+position = Vector2(44, 43.7143)
+scale = Vector2(0.266667, 0.25)
+texture = ExtResource("4_aymrh")
+
+[node name="Sprite2D4" type="Sprite2D" parent="fondo"]
+position = Vector2(208.106, 46.4403)
+scale = Vector2(0.121163, 0.145776)
+texture = ExtResource("5_152rc")
+
+[node name="Sprite2D5" type="Sprite2D" parent="fondo"]
+position = Vector2(212.391, 60.726)
+scale = Vector2(0.0913002, 0.126729)
+texture = ExtResource("5_152rc")
+
+[node name="Sprite2D6" type="Sprite2D" parent="fondo"]
+position = Vector2(210.106, 53.8689)
+scale = Vector2(0.0861982, 0.110276)
+texture = ExtResource("5_152rc")
+
+[node name="Sprite2D7" type="Sprite2D" parent="fondo"]
+position = Vector2(124.181, 56.876)
+scale = Vector2(0.0988998, 0.0793805)
+texture = ExtResource("6_wi554")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 858.0
+offset_top = 81.0
+offset_right = 1041.0
+offset_bottom = 211.0
+
+[node name="Sentado" type="Sprite2D" parent="."]
+position = Vector2(745, 502)
+scale = Vector2(0.9, 0.9)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(331, 465)
+scale = Vector2(0.387991, 0.537971)
+texture = ExtResource("7_qojw8")
+
+[node name="Button" type="Button" parent="Sprite2D"]
+offset_left = 505.167
+offset_top = 96.1228
+offset_right = 1025.17
+offset_bottom = 616.123
+scale = Vector2(0.257318, 0.165897)
+theme_override_colors/font_color = Color(0.541176, 1, 0.960784, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0.729412, 1)
+theme_override_fonts/font = ExtResource("8_ixf75")
+theme_override_font_sizes/font_size = 40
+icon = ExtResource("9_ujoxq")
+
+[node name="TextEdit" type="TextEdit" parent="Sprite2D"]
+texture_filter = 1
+offset_left = -613.0
+offset_top = -100.0
+offset_right = 472.0
+offset_bottom = 191.0
+theme_override_fonts/font = ExtResource("8_ixf75")
+theme_override_font_sizes/font_size = 39
+text = "¿Qué sucede haya afuera?  
+¿Zombis en una escuela?,
+ tengo suerte de tener esta maravilla
+en mis manos"
+
+[node name="TextEdit2" type="TextEdit" parent="Sprite2D"]
+texture_filter = 1
+offset_left = -637.0
+offset_top = -194.0
+offset_right = -281.0
+offset_bottom = -114.0
+scale = Vector2(0.914539, 1)
+theme_override_colors/background_color = Color(0, 0, 0, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("8_ixf75")
+theme_override_font_sizes/font_size = 50
+text = "   lina"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_5dnu8")
+volume_db = -16.0
+autoplay = true
+
+[connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dd2avkqkkjvx5"
+path="res://.godot/imported/SONIDO MOTOSIERRA  LARGO.mp3-1d30257bdb5c74c7479cd3037365e67d.mp3str"
+
+[deps]
+
+source_file="res://33/Sonidos/SONIDO MOTOSIERRA  LARGO.mp3"
+dest_files=["res://.godot/imported/SONIDO MOTOSIERRA  LARGO.mp3-1d30257bdb5c74c7479cd3037365e67d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://coajjqmbd4fjc"
+path="res://.godot/imported/WIN pixel.mp3-25bdc13c905c9b17ead67b20a1ed4373.mp3str"
+
+[deps]
+
+source_file="res://33/Sonidos/WIN pixel.mp3"
+dest_files=["res://.godot/imported/WIN pixel.mp3-25bdc13c905c9b17ead67b20a1ed4373.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

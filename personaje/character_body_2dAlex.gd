@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 const SPEED = 90.0
-const JUMP_VELOCITY = -800
-const GRAVITY = 75
+const JUMP_VELOCITY = -850
+const GRAVITY = 72
 
 @onready var Anim = $AnimatedSprite2D
 @onready var spr = $Sprite2D
@@ -39,6 +39,7 @@ func _physics_process(delta):
 		animation_player.play("atacar")
 		attacking = true
 		attack_timer = 0.0
+		$AudioStreamPlayer2D.play()
 
 	# Comprobación de salto
 	if Input.is_action_just_pressed("saltar") and is_on_floor():
