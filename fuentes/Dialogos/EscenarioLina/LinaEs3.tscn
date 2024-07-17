@@ -91,8 +91,9 @@ offset_right = 387.0
 offset_bottom = 191.0
 theme_override_fonts/font = ExtResource("8_utxxf")
 theme_override_font_sizes/font_size = 39
-text = "Si, logre sobrevivir, solo hay
- que esperar a los demas"
+text = "Amigos me da mucho gusto verlos.
+
+No saben el horror que pase."
 
 [node name="TextEdit2" type="TextEdit" parent="Sprite2D"]
 texture_filter = 1
@@ -105,6 +106,6 @@ theme_override_colors/background_color = Color(0, 0, 0, 0)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("8_utxxf")
 theme_override_font_sizes/font_size = 50
-text = "   sofia"
+text = "   lina"
 
 [connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]

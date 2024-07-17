@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://daxrfquuswc3n" path="res://33/objetos/Saloness/MapaDirector.png" id="3_i564m"]
 [ext_resource type="Texture2D" uid="uid://dp2s7hahaauxg" path="res://33/personaje/marcos poses/normal.png" id="4_w220h"]
 [ext_resource type="Texture2D" uid="uid://icb36tgiafp6" path="res://33/policia.png" id="5_gibyt"]
-[ext_resource type="Texture2D" uid="uid://ucjt0waoymki" path="res://enemy/Zombie1/zombiJefee.png" id="6_8ud7e"]
+[ext_resource type="Texture2D" uid="uid://ucjt0waoymki" path="res://enemy/Zombie1/Zombi jefe/zombiJefee.png" id="6_8ud7e"]
 [ext_resource type="Texture2D" uid="uid://ddqiokguac1mw" path="res://33/Leyendas/Leyenda1.png" id="6_i528j"]
 [ext_resource type="FontFile" uid="uid://bu7d7qqv3lvh8" path="res://fuentes/pixelart.ttf" id="7_jg0hn"]
 [ext_resource type="Texture2D" uid="uid://0gepb73gvssl" path="res://33/botones/NextText.png" id="8_8ulr5"]

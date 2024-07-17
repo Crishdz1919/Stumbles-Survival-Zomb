@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://c7tcxwpkj0ax5"]
 
 [ext_resource type="Script" path="res://zomb.gd" id="1_x6fx8"]
-[ext_resource type="Texture2D" uid="uid://ct1bbr6roeuag" path="res://enemy/Zombie1/animation/Dead7.png" id="2_ecwn5"]
+[ext_resource type="Texture2D" uid="uid://bn7rs8s5qikm3" path="res://enemy/Zombie1/animation/ultimo zomb.png" id="2_qh3to"]
 [ext_resource type="Texture2D" uid="uid://ksglyjwddfik" path="res://enemy/Zombie1/animation/Walk1.png" id="3_4ytp5"]
 [ext_resource type="Texture2D" uid="uid://biheof31conjd" path="res://enemy/Zombie1/animation/Walk2.png" id="4_fa10o"]
 [ext_resource type="Texture2D" uid="uid://dh2kwbus68nt8" path="res://enemy/Zombie1/animation/Walk3.png" id="5_7cjg5"]
@@ -14,7 +14,7 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_ecwn5")
+"texture": ExtResource("2_qh3to")
 }],
 "loop": false,
 "name": &"Dead",
@@ -59,10 +59,10 @@ script = ExtResource("1_x6fx8")
 position = Vector2(13.8009, -7.22931)
 scale = Vector2(0.130319, 0.101648)
 sprite_frames = SubResource("SpriteFrames_dcuo7")
-animation = &"run"
+animation = &"Dead"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(13.8009, -4.81954)
+position = Vector2(13.8009, -7.22932)
 shape = SubResource("RectangleShape2D_nxfxx")
 
 [node name="atac" type="Area2D" parent="."]
@@ -74,7 +74,7 @@ shape = SubResource("RectangleShape2D_avd4b")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("9_pjbb4")
-volume_db = -42.393
+volume_db = -26.0
 autoplay = true
 
 [connection signal="body_entered" from="atac" to="." method="_on_atac_body_entered"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dnpduwxbmqfng"
+path="res://.godot/imported/all units we got a 5150 over at harvard square (boston).mp3-dd5ffa42b4256899714b6a7738c93020.mp3str"
+
+[deps]
+
+source_file="res://33/Sonidos/all units we got a 5150 over at harvard square (boston).mp3"
+dest_files=["res://.godot/imported/all units we got a 5150 over at harvard square (boston).mp3-dd5ffa42b4256899714b6a7738c93020.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

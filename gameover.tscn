@@ -113,7 +113,7 @@ metadata/_edit_use_anchors_ = true
 [node name="Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0.729412, 1)
+theme_override_colors/font_pressed_color = Color(0.552956, 0.552956, 0.552956, 1)
 theme_override_fonts/font = ExtResource("2_jg4vh")
 theme_override_font_sizes/font_size = 40
 text = "Intentar de nuevo"

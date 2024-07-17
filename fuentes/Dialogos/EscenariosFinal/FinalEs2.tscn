@@ -1,0 +1,128 @@
+[gd_scene load_steps=15 format=3 uid="uid://c30djs683odtm"]
+
+[ext_resource type="Script" path="res://fuentes/Dialogos/EscenariosFinal/FinalEs2.gd" id="1_635xo"]
+[ext_resource type="Texture2D" uid="uid://b7brxaq8vff1a" path="res://33/Leyendas/Marcos/Escena1Marcos.png" id="2_otm8b"]
+[ext_resource type="Texture2D" uid="uid://ckijaib545y4i" path="res://33/objetos/Saloness/MapaCafeteria.png" id="3_djpqv"]
+[ext_resource type="Texture2D" uid="uid://p5gpg743wgv0" path="res://33/personaje/Sofia/Sofia arroja.png" id="4_l2ulr"]
+[ext_resource type="Texture2D" uid="uid://uqjaxcuvcw72" path="res://33/personaje/Lina/Lina dispara2.png" id="5_p5p7l"]
+[ext_resource type="Texture2D" uid="uid://u2puohx6vph" path="res://33/Madera.png" id="6_kfvf2"]
+[ext_resource type="Texture2D" uid="uid://dw3thyv6lp0w8" path="res://33/personaje/marcos poses/corre2.png" id="7_jm140"]
+[ext_resource type="Texture2D" uid="uid://c4c8ph5hwx1ws" path="res://33/personaje/Alex/Alex Normal.png" id="8_dkej7"]
+[ext_resource type="Texture2D" uid="uid://ci6wtlcn5lddy" path="res://enemy/Zombie1/Zombi jefe/zombie jefe camina 3.png" id="9_45mmw"]
+[ext_resource type="Texture2D" uid="uid://ddqiokguac1mw" path="res://33/Leyendas/Leyenda1.png" id="11_3a1yv"]
+[ext_resource type="Texture2D" uid="uid://dc2puyk5kvfr3" path="res://33/impact/explosion.png" id="11_5h7cc"]
+[ext_resource type="FontFile" uid="uid://bu7d7qqv3lvh8" path="res://fuentes/pixelart.ttf" id="12_n8x2n"]
+[ext_resource type="Texture2D" uid="uid://0gepb73gvssl" path="res://33/botones/NextText.png" id="13_a50w1"]
+[ext_resource type="AudioStream" uid="uid://jopdqt6ud4fx" path="res://33/Sonidos/Explosion.mp3" id="15_5rfjw"]
+
+[node name="menu" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_635xo")
+
+[node name="fondo" type="Node2D" parent="."]
+texture_filter = 1
+position = Vector2(577, 322)
+scale = Vector2(3.5, 3.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="fondo"]
+position = Vector2(21.4286, -53.4286)
+scale = Vector2(0.3, 0.329)
+texture = ExtResource("2_otm8b")
+
+[node name="salon" type="Sprite2D" parent="fondo"]
+position = Vector2(-8.42858, 7.28572)
+scale = Vector2(0.212719, 0.223153)
+texture = ExtResource("3_djpqv")
+
+[node name="Sprite2D2" type="Sprite2D" parent="fondo"]
+position = Vector2(-75.1429, -4.42857)
+scale = Vector2(0.183929, 0.171875)
+texture = ExtResource("4_l2ulr")
+
+[node name="Sprite2D4" type="Sprite2D" parent="fondo"]
+position = Vector2(-56, -30)
+scale = Vector2(0.147851, 0.132426)
+texture = ExtResource("5_p5p7l")
+
+[node name="Sprite2D5" type="Sprite2D" parent="fondo"]
+position = Vector2(212.391, 60.726)
+scale = Vector2(0.0913002, 0.126729)
+texture = ExtResource("6_kfvf2")
+
+[node name="Sprite2D6" type="Sprite2D" parent="fondo"]
+position = Vector2(26.5714, 7.14286)
+scale = Vector2(0.156966, 0.133596)
+texture = ExtResource("7_jm140")
+
+[node name="Sprite2D7" type="Sprite2D" parent="fondo"]
+position = Vector2(-5.42857, 58.5714)
+scale = Vector2(0.168154, 0.1266)
+texture = ExtResource("8_dkej7")
+
+[node name="Sprite2D3" type="Sprite2D" parent="fondo"]
+position = Vector2(-8, 8.57143)
+scale = Vector2(0.02, 0.0185147)
+texture = ExtResource("9_45mmw")
+
+[node name="Sprite2D9" type="Sprite2D" parent="fondo"]
+position = Vector2(-7.71429, 2.28571)
+scale = Vector2(1.47143, 1)
+texture = ExtResource("11_5h7cc")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 858.0
+offset_top = 81.0
+offset_right = 1041.0
+offset_bottom = 211.0
+
+[node name="Sentado" type="Sprite2D" parent="."]
+position = Vector2(745, 502)
+scale = Vector2(0.9, 0.9)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(330, 454)
+scale = Vector2(0.387991, 0.537971)
+texture = ExtResource("11_3a1yv")
+
+[node name="Button" type="Button" parent="Sprite2D"]
+offset_left = 505.167
+offset_top = 96.1228
+offset_right = 1025.17
+offset_bottom = 616.123
+scale = Vector2(0.257318, 0.165897)
+theme_override_colors/font_color = Color(0.541176, 1, 0.960784, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0.729412, 1)
+theme_override_fonts/font = ExtResource("12_n8x2n")
+theme_override_font_sizes/font_size = 40
+icon = ExtResource("13_a50w1")
+
+[node name="TextEdit" type="TextEdit" parent="Sprite2D"]
+texture_filter = 1
+offset_left = -613.0
+offset_top = -100.0
+offset_right = 387.0
+offset_bottom = 191.0
+theme_override_fonts/font = ExtResource("12_n8x2n")
+theme_override_font_sizes/font_size = 39
+text = "Sofia!!
+
+Eres una p@#$a demente"
+
+[node name="TextEdit2" type="TextEdit" parent="Sprite2D"]
+texture_filter = 1
+offset_left = -637.0
+offset_top = -194.0
+offset_right = -281.0
+offset_bottom = -114.0
+scale = Vector2(0.914539, 1)
+theme_override_colors/background_color = Color(0, 0, 0, 0)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("12_n8x2n")
+theme_override_font_sizes/font_size = 50
+text = "   alex"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_5rfjw")
+autoplay = true
+
+[connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]

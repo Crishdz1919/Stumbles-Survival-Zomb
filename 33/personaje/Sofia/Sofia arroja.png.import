@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ucjt0waoymki"
-path="res://.godot/imported/zombiJefee.png-83ab7ae6a4dddb625ac02e5bf6164704.ctex"
+uid="uid://p5gpg743wgv0"
+path="res://.godot/imported/Sofia arroja.png-c07dca6114b285b89d4e24672bb13a29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemy/Zombie1/zombiJefee.png"
-dest_files=["res://.godot/imported/zombiJefee.png-83ab7ae6a4dddb625ac02e5bf6164704.ctex"]
+source_file="res://33/personaje/Sofia/Sofia arroja.png"
+dest_files=["res://.godot/imported/Sofia arroja.png-c07dca6114b285b89d4e24672bb13a29.ctex"]
 
 [params]
 

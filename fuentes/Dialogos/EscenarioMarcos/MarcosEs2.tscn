@@ -86,7 +86,7 @@ text = "   Marcos"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_v4hvp")
-volume_db = -9.551
+volume_db = -1.061
 autoplay = true
 
 [connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]

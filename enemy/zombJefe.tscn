@@ -1,0 +1,80 @@
+[gd_scene load_steps=10 format=3 uid="uid://bpvyik4w3mwva"]
+
+[ext_resource type="Script" path="res://zombJefe.gd" id="1_k0aqw"]
+[ext_resource type="Texture2D" uid="uid://bn7rs8s5qikm3" path="res://enemy/Zombie1/animation/ultimo zomb.png" id="2_dov2e"]
+[ext_resource type="Texture2D" uid="uid://c7ix6shxjhtg1" path="res://enemy/Zombie1/Zombi jefe/zombie jefe camina 1.png" id="3_lu2mb"]
+[ext_resource type="Texture2D" uid="uid://7y11h75rh0fp" path="res://enemy/Zombie1/Zombi jefe/zombie jefe camina 2.png" id="4_5rkke"]
+[ext_resource type="Texture2D" uid="uid://ci6wtlcn5lddy" path="res://enemy/Zombie1/Zombi jefe/zombie jefe camina 3.png" id="5_7k0c6"]
+[ext_resource type="AudioStream" uid="uid://o31rreyk1y41" path="res://33/Sonidos/Sonido largo zombie.mp3" id="9_u3adm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dcuo7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dov2e")
+}],
+"loop": false,
+"name": &"Dead",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_lu2mb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5rkke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7k0c6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lu2mb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5rkke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7k0c6")
+}],
+"loop": true,
+"name": &"run",
+"speed": 4.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nxfxx"]
+size = Vector2(4.60029, 31.6566)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_srwad"]
+radius = 18.0733
+height = 36.1466
+
+[node name="zomb" type="CharacterBody2D" groups=["ene"]]
+texture_filter = 1
+scale = Vector2(0.434755, 0.414977)
+script = ExtResource("1_k0aqw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(18.4012, -9.63909)
+scale = Vector2(0.0536587, 0.0461539)
+sprite_frames = SubResource("SpriteFrames_dcuo7")
+animation = &"run"
+frame = 2
+frame_progress = 0.751671
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(13.8009, -7.22932)
+shape = SubResource("RectangleShape2D_nxfxx")
+
+[node name="atac" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="atac"]
+position = Vector2(18.4012, -8.4342)
+scale = Vector2(1, 0.999999)
+shape = SubResource("CapsuleShape2D_srwad")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_u3adm")
+volume_db = -26.0
+autoplay = true
+
+[connection signal="body_entered" from="atac" to="." method="_on_atac_body_entered"]

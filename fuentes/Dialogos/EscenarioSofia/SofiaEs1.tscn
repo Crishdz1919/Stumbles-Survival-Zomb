@@ -112,7 +112,7 @@ text = "   sofia"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_gf4ol")
-volume_db = -20.0
+volume_db = -10.0
 autoplay = true
 
 [connection signal="pressed" from="Sprite2D/Button" to="." method="_on_button_pressed"]

@@ -1,27 +1,31 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720472021
-gameover.tscn::PackedScene::8032938036818918064::1720403838::0::1::::<><>::res://scrips/gameover.gd<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://nybg67uojjsd::::res://33/Sonidos/you lose.mp3<>uid://bd8ey6g4ynt7m::::res://33/Sonidos/grito alex y marcos.mp3
+::res://::1720743484
+gameover.tscn::PackedScene::8032938036818918064::1720575878::0::1::::<><>::res://scrips/gameover.gd<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://nybg67uojjsd::::res://33/Sonidos/you lose.mp3<>uid://bd8ey6g4ynt7m::::res://33/Sonidos/grito alex y marcos.mp3
 icon.svg::CompressedTexture2D::5220140445932677419::1695560827::1695560865::1::::<><>::
 mundo.gd::GDScript::-1::1720248656::0::1::::<>Node2D<>::
-mundo.tscn::PackedScene::5247469381702607058::1720399438::0::1::::<><>::res://mundo.gd<>uid://b4diibdn1622c::::res://33/prueba/ciel05.png<>uid://c5dm64xo5t1lq::::res://33/objetos/Inicio.png<>uid://5b115ecwsscj::::res://33/objetos/logo7.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://ccyhujj3awh50::::res://33/Sonidos/intro.mp3
+mundo.tscn::PackedScene::5247469381702607058::1720575878::0::1::::<><>::res://mundo.gd<>uid://b4diibdn1622c::::res://33/prueba/ciel05.png<>uid://c5dm64xo5t1lq::::res://33/objetos/Inicio.png<>uid://5b115ecwsscj::::res://33/objetos/logo7.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://ccyhujj3awh50::::res://33/Sonidos/intro.mp3
 trans.tscn::PackedScene::4202328258987455393::1719216175::0::1::::<><>::res://scrips/Trans.gd
-zomb.gd::GDScript::-1::1720391773::0::1::::<>CharacterBody2D<>::
-::res://33/::1720314198
+zomb.gd::GDScript::-1::1720563297::0::1::::<>CharacterBody2D<>::
+zombJefe.gd::GDScript::-1::1720650855::0::1::::<>CharacterBody2D<>::
+::res://33/::1720483744
 fondo.png::CompressedTexture2D::8429080174689352263::1719466142::1719466143::1::::<><>::
 Madera.png::CompressedTexture2D::42954773238755105::1720299929::1720299929::1::::<><>::
 policia.png::CompressedTexture2D::565751881692930097::1720244471::1720244471::1::::<><>::
 Terrain (32x32).png::CompressedTexture2D::5703153728182209974::1696442796::1696442797::1::::<><>::
-::res://33/botones/::1720208690
+::res://33/botones/::1720483743
 NextText.png::CompressedTexture2D::1767377115592955711::1720208690::1720208690::1::::<><>::
-::res://33/impact/::1720406338
+::res://33/impact/::1720582562
+bomb_2.png::CompressedTexture2D::2750423761534206459::1720580453::1720580454::1::::<><>::
+explosion.png::CompressedTexture2D::7356325685870282234::1720582562::1720582562::1::::<><>::
 fuego.png::CompressedTexture2D::8357599218996251582::1720307505::1720307505::1::::<><>::
+pared invisible.png::CompressedTexture2D::2737809196684201097::1720549082::1720549082::1::::<><>::
 salpicadura.png::CompressedTexture2D::4929984518088057792::1720406338::1720406338::1::::<><>::
-::res://33/Leyendas/::1720251594
+::res://33/Leyendas/::1720483743
 altavoz.png::CompressedTexture2D::4411637073908620069::1720251594::1720251594::1::::<><>::
 Leyenda1.png::CompressedTexture2D::7403369898526302502::1720206036::1720206036::1::::<><>::
-::res://33/Leyendas/Marcos/::1720207597
+::res://33/Leyendas/Marcos/::1720483743
 Escena1Marcos.png::CompressedTexture2D::4635601346245545504::1720205530::1720205530::1::::<><>::
-::res://33/objetos/::1719521554
+::res://33/objetos/::1720567022
 barill.png::CompressedTexture2D::7878272058691199849::1695560943::1695560949::1::::<><>::
 caja de carga2.png::CompressedTexture2D::1208920894138732120::1695560943::1695560952::1::::<><>::
 caja de carga.png::CompressedTexture2D::8122838032367120723::1695560943::1695560949::1::::<><>::
@@ -30,43 +34,47 @@ Inicio.png::CompressedTexture2D::6885485332698221286::1719208092::1719208093::1:
 letrero2.png::CompressedTexture2D::2410318877066975418::1695560943::1695560949::1::::<><>::
 letrero.png::CompressedTexture2D::4083648647458768345::1695560943::1695560949::1::::<><>::
 logo7.png::CompressedTexture2D::2109356341349207237::1719207433::1719207433::1::::<><>::
+mesa.png::CompressedTexture2D::8895923147589121547::1720567021::1720567022::1::::<><>::
 personaje.png::CompressedTexture2D::8453112905234409724::1695560943::1695560949::1::::<><>::
-::res://33/objetos/Saloness/::1720249592
+Silla.png::CompressedTexture2D::9193842208204576800::1720567021::1720567022::1::::<><>::
+::res://33/objetos/Saloness/::1720512148
+Mapa Grande.png::CompressedTexture2D::5032897161234738328::1720512147::1720512148::1::::<><>::
 MapaAlex.png::CompressedTexture2D::5739992669255960683::1720249592::1720249592::1::::<><>::
 MapaCafeteria.png::CompressedTexture2D::5491791701868532226::1719456746::1719456746::1::::<><>::
 MapaDirector.png::CompressedTexture2D::7207784729472553501::1719456746::1719456746::1::::<><>::
 MapaLina.png::CompressedTexture2D::3861701236629804953::1719456746::1719456746::1::::<><>::
 MapaMarcosGOD.png::CompressedTexture2D::7378019833592311031::1719456746::1719456746::1::::<><>::
 MapaSofia.png::CompressedTexture2D::5168461998773977461::1719456746::1719456746::1::::<><>::
-::res://33/personaje/::1720402365
-::res://33/personaje/Alex/::1720154083
+::res://33/personaje/::1720483743
+::res://33/personaje/Alex/::1720583256
 Alex dispara.png::CompressedTexture2D::982193042042937550::1720154082::1720154083::1::::<><>::
 Alex Normal.png::CompressedTexture2D::6814477450423093214::1720154082::1720154083::1::::<><>::
+Alex pone tablas.png::CompressedTexture2D::3891789182663039007::1720583256::1720583256::1::::<><>::
 Disparo1.png::CompressedTexture2D::7441058418382311718::1720154082::1720154083::1::::<><>::
 Salto.png::CompressedTexture2D::5183182832150785657::1720154082::1720154083::1::::<><>::
-::res://33/personaje/Alex/Alex camina/::1720154083
+::res://33/personaje/Alex/Alex camina/::1720483743
 Alex- camina -3.png::CompressedTexture2D::6235150701726419402::1720154082::1720154083::1::::<><>::
 Alex- camina -4.png::CompressedTexture2D::4734961448025429381::1720154082::1720154083::1::::<><>::
 Alex- camina -5.png::CompressedTexture2D::6108059262676558553::1720154082::1720154083::1::::<><>::
 Alex- camina -6.png::CompressedTexture2D::1043378478920734695::1720154082::1720154083::1::::<><>::
 Alex- camina -7.png::CompressedTexture2D::1270344947734764759::1720154082::1720154083::1::::<><>::
-::res://33/personaje/Lina/::1720402365
+::res://33/personaje/Lina/::1720483743
 Lina dialoga.png::CompressedTexture2D::1187622537985491597::1720402365::1720402365::1::::<><>::
 Lina dispara2.png::CompressedTexture2D::1437354581824041107::1720402365::1720402365::1::::<><>::
 Lina disparo1.png::CompressedTexture2D::7459812896897546282::1720402365::1720402365::1::::<><>::
 Lina normal.png::CompressedTexture2D::1521876510751568870::1720402365::1720402365::1::::<><>::
 Lina Salta.png::CompressedTexture2D::5334880988500890591::1720402365::1720402365::1::::<><>::
-::res://33/personaje/Lina/Lina Camina/::1720402365
+::res://33/personaje/Lina/Lina Camina/::1720483743
 Lina camina 1.png::CompressedTexture2D::644905783283591681::1720402365::1720402365::1::::<><>::
 Lina camina 2.png::CompressedTexture2D::3743514093255469682::1720402365::1720402365::1::::<><>::
 Lina camina 3.png::CompressedTexture2D::6887339699061474123::1720402365::1720402365::1::::<><>::
-::res://33/personaje/marcos poses/::1720207856
+::res://33/personaje/marcos poses/::1720483743
 corre2.png::CompressedTexture2D::8762386606074699705::1720207856::1720207856::1::::<><>::
 normal.png::CompressedTexture2D::8268983324265678788::1719189512::1719189512::1::::<><>::
 Salto - izq.png::CompressedTexture2D::1850463752483844403::1719189512::1719189512::1::::<><>::
 Salto.png::CompressedTexture2D::5596768447506651549::1719189512::1719189512::1::::<><>::
 sentado.png::CompressedTexture2D::7875768391247843352::1720207523::1720207523::1::::<><>::
-::res://33/personaje/marcos poses/caminar/::1720207841
+::res://33/personaje/marcos poses/caminar/::1720483743
 character_maleAdventurer_walk0.png::CompressedTexture2D::5349928640953752048::1719189512::1719189512::1::::<><>::
 character_maleAdventurer_walk1.png::CompressedTexture2D::2175148036632073965::1719189512::1719189512::1::::<><>::
 character_maleAdventurer_walk2.png::CompressedTexture2D::3916860002470379704::1719189512::1719189512::1::::<><>::
@@ -76,7 +84,7 @@ character_maleAdventurer_walk5.png::CompressedTexture2D::6727568236585947999::17
 character_maleAdventurer_walk6.png::CompressedTexture2D::9051313756522709560::1719189512::1719189512::1::::<><>::
 character_maleAdventurer_walk7.png::CompressedTexture2D::8963738653587701556::1719189512::1719189512::1::::<><>::
 corre2.png::CompressedTexture2D::6701646065299490400::1720207841::1720207841::1::::<><>::
-::res://33/personaje/marcos poses/caminar/Caminar izq/::1719521555
+::res://33/personaje/marcos poses/caminar/Caminar izq/::1720483743
 character_maleAdventurer_walk0.png::CompressedTexture2D::803348855205052530::1719189512::1719189512::1::::<><>::
 character_maleAdventurer_walk1.png::CompressedTexture2D::8940617100637704708::1719189512::1719189512::1::::<><>::
 character_maleAdventurer_walk2.png::CompressedTexture2D::2932893064488909184::1719189512::1719189512::1::::<><>::
@@ -85,26 +93,28 @@ character_maleAdventurer_walk4.png::CompressedTexture2D::2062725614911622428::17
 character_maleAdventurer_walk5.png::CompressedTexture2D::8983547152040872901::1719189512::1719189512::1::::<><>::
 character_maleAdventurer_walk6.png::CompressedTexture2D::341727813207446616::1719189512::1719189512::1::::<><>::
 character_maleAdventurer_walk7.png::CompressedTexture2D::6785069550926243696::1719189512::1719189512::1::::<><>::
-::res://33/personaje/marcos poses/Disparos/::1719521555
+::res://33/personaje/marcos poses/Disparos/::1720483743
 disparo2 - izq.png::CompressedTexture2D::5810185260557727998::1719189512::1719189512::1::::<><>::
 disparo2.png::CompressedTexture2D::6880725391437586803::1719189512::1719189512::1::::<><>::
 Disparo 1 - izq.png::CompressedTexture2D::5318343917297732952::1719189512::1719189512::1::::<><>::
 Disparo 1.png::CompressedTexture2D::9102129280238071191::1719189512::1719189512::1::::<><>::
-::res://33/personaje/marcos poses/Disparos/escopeta/::1719521555
+::res://33/personaje/marcos poses/Disparos/escopeta/::1720483743
 disparo2 - izq.png::CompressedTexture2D::603194682421875020::1719189512::1719189512::1::::<><>::
 disparo2.png::CompressedTexture2D::7578154774622540782::1719189512::1719189512::1::::<><>::
 Disparo 1 - izq.png::CompressedTexture2D::3837674984420003822::1719189512::1719189512::1::::<><>::
 Disparo 1.png::CompressedTexture2D::5462726549604909942::1719189512::1719189512::1::::<><>::
-::res://33/personaje/Sofia/::1720301997
+::res://33/personaje/Sofia/::1720583588
 dispara1.png::CompressedTexture2D::1749910212825610253::1720301997::1720301997::1::::<><>::
 dispara2.png::CompressedTexture2D::8630499637894714678::1720301997::1720301997::1::::<><>::
 jump.png::CompressedTexture2D::8756054885687176228::1720301997::1720301997::1::::<><>::
 normal.png::CompressedTexture2D::3739965707344999231::1720301997::1720301997::1::::<><>::
-::res://33/personaje/Sofia/camina/::1720301997
+Sofia arroja.png::CompressedTexture2D::1115155441987210507::1720580130::1720580130::1::::<><>::
+sofia mezcla.png::CompressedTexture2D::7153210954189058077::1720583587::1720583588::1::::<><>::
+::res://33/personaje/Sofia/camina/::1720483743
 SofiaCamina1.png::CompressedTexture2D::2086896255669422885::1720301997::1720301997::1::::<><>::
 SofiaCamina2.png::CompressedTexture2D::8989206473104134137::1720301997::1720301997::1::::<><>::
 SofiaCamina3.png::CompressedTexture2D::3351290616055759242::1720301997::1720301997::1::::<><>::
-::res://33/prueba/::1719521555
+::res://33/prueba/::1720550449
 ciel03.png::CompressedTexture2D::6728103447882275103::1695560943::1695560946::1::::<><>::
 ciel04.png::CompressedTexture2D::3475718391338430756::1695560943::1695560946::1::::<><>::
 ciel05.png::CompressedTexture2D::4428590362536009596::1695560943::1695560946::1::::<><>::
@@ -117,6 +127,7 @@ fondo3.png::CompressedTexture2D::4649312146245928302::1695560943::1695560945::1:
 fondo4.png::CompressedTexture2D::635882864700708025::1695560943::1695560945::1::::<><>::
 fondo-1.png::CompressedTexture2D::7506611069016598203::1695560943::1695560945::1::::<><>::
 fondo-2.png::CompressedTexture2D::3607418898461405522::1695560943::1695560945::1::::<><>::
+fondo.png::CompressedTexture2D::1526379215720544550::1720550449::1720550449::1::::<><>::
 nieve.png::CompressedTexture2D::6763899210453676843::1695560943::1695560945::1::::<><>::
 pantalla.png::CompressedTexture2D::6235715440568359555::1695560943::1695560945::1::::<><>::
 terr.png::CompressedTexture2D::6072302517983998230::1695560943::1695560948::1::::<><>::
@@ -125,13 +136,16 @@ tileset2.png::CompressedTexture2D::1545950708167971707::1695560944::1695560948::
 tileset3.png::CompressedTexture2D::7523179198786767879::1695560944::1695560948::1::::<><>::
 tileset4.png::CompressedTexture2D::2273911509681769685::1695560944::1695560948::1::::<><>::
 tileset.png::CompressedTexture2D::5197149818320686332::1695560944::1695560948::1::::<><>::
-::res://33/Sonidos/::1720421327
+::res://33/Sonidos/::1720658521
+all units we got a 5150 over at harvard square (boston).mp3::AudioStreamMP3::8102901742647329396::1720584410::1720584411::1::::<><>::
 DisparoSofia.wav::AudioStreamWAV::3479159357303561835::1720395073::1720395074::1::::<><>::
+Explosion.mp3::AudioStreamMP3::661517864732602669::1720583136::1720583137::1::::<><>::
 golpeAlexMarcos.mp3::AudioStreamMP3::6004674111360071316::1720387195::1720387196::1::::<><>::
 grito alex y marcos.mp3::AudioStreamMP3::2665399046358868512::1720393167::1720393167::1::::<><>::
 Gritos largos.mp3::AudioStreamMP3::8010505714829300472::1720417710::1720417710::1::::<><>::
 intro.mp3::AudioStreamMP3::4963225343473621409::1720397309::1720397317::1::::<><>::
 Laboratorio efecto de sonido.mp3::AudioStreamMP3::7349545148612234637::1720420478::1720420560::1::::<><>::
+MAP1.mp3::AudioStreamMP3::5394588301751737852::1720485820::1720485836::1::::<><>::
 Map1.wav::AudioStreamWAV::7341120331331263833::1720394300::1720394301::1::::<><>::
 Map2.wav::AudioStreamWAV::6577354616523095032::1720394546::1720394548::1::::<><>::
 Map3.wav::AudioStreamWAV::6259390791634514187::1720398598::1720398600::1::::<><>::
@@ -141,15 +155,16 @@ Sonido corto zombie.mp3::AudioStreamMP3::8511784872048008101::1720417861::172041
 Sonido largo zombie.mp3::AudioStreamMP3::1042056288535472708::1720391626::1720391702::1::::<><>::
 SONIDO MOTOSIERRA  LARGO.mp3::AudioStreamMP3::7425604833443485608::1720421327::1720421327::1::::<><>::
 SONIDO MOTOSIERRA.mp3::AudioStreamMP3::7006122615177889210::1720407395::1720407395::1::::<><>::
+Win normal.mp3::AudioStreamMP3::7753626041775372617::1720658521::1720658521::1::::<><>::
 WIN pixel.mp3::AudioStreamMP3::5756048562360543360::1720390232::1720390232::1::::<><>::
 you lose.mp3::AudioStreamMP3::962073143733429171::1720314363::1720314363::1::::<><>::
 Zombi enorme zonido corto.mp3::AudioStreamMP3::4092065752022842354::1720418762::1720418762::1::::<><>::
 Zombi enorme zonido largo.mp3::AudioStreamMP3::5463532948518117302::1720418762::1720418762::1::::<><>::
-::res://enemy/::1720399437
-zomb.tscn::PackedScene::7058271227528853764::1720399437::0::1::::<><>::res://zomb.gd<>uid://ct1bbr6roeuag::::res://enemy/Zombie1/animation/Dead7.png<>uid://ksglyjwddfik::::res://enemy/Zombie1/animation/Walk1.png<>uid://biheof31conjd::::res://enemy/Zombie1/animation/Walk2.png<>uid://dh2kwbus68nt8::::res://enemy/Zombie1/animation/Walk3.png<>uid://duquhrabtl4l5::::res://enemy/Zombie1/animation/Walk4.png<>uid://dkwqra6jmxh37::::res://enemy/Zombie1/animation/Walk5.png<>uid://b8q6lffe8usie::::res://enemy/Zombie1/animation/Walk6.png<>uid://o31rreyk1y41::::res://33/Sonidos/Sonido largo zombie.mp3
-::res://enemy/Zombie1/::1720247696
-zombiJefee.png::CompressedTexture2D::1408487358376975404::1720247696::1720247696::1::::<><>::
-::res://enemy/Zombie1/animation/::1719521555
+::res://enemy/::1720652724
+zomb.tscn::PackedScene::7058271227528853764::1720561031::0::1::::<><>::res://zomb.gd<>uid://bn7rs8s5qikm3::::res://enemy/Zombie1/animation/ultimo zomb.png<>uid://ksglyjwddfik::::res://enemy/Zombie1/animation/Walk1.png<>uid://biheof31conjd::::res://enemy/Zombie1/animation/Walk2.png<>uid://dh2kwbus68nt8::::res://enemy/Zombie1/animation/Walk3.png<>uid://duquhrabtl4l5::::res://enemy/Zombie1/animation/Walk4.png<>uid://dkwqra6jmxh37::::res://enemy/Zombie1/animation/Walk5.png<>uid://b8q6lffe8usie::::res://enemy/Zombie1/animation/Walk6.png<>uid://o31rreyk1y41::::res://33/Sonidos/Sonido largo zombie.mp3
+zombJefe.tscn::PackedScene::3484077336346800450::1720652724::0::1::::<><>::res://zombJefe.gd<>uid://bn7rs8s5qikm3::::res://enemy/Zombie1/animation/ultimo zomb.png<>uid://c7ix6shxjhtg1::::res://enemy/Zombie1/Zombi jefe/zombie jefe camina 1.png<>uid://7y11h75rh0fp::::res://enemy/Zombie1/Zombi jefe/zombie jefe camina 2.png<>uid://ci6wtlcn5lddy::::res://enemy/Zombie1/Zombi jefe/zombie jefe camina 3.png<>uid://o31rreyk1y41::::res://33/Sonidos/Sonido largo zombie.mp3
+::res://enemy/Zombie1/::1720506513
+::res://enemy/Zombie1/animation/::1720490818
 Dead1.png::CompressedTexture2D::2296441454023335479::1719209008::1719209009::1::::<><>::
 Dead2.png::CompressedTexture2D::1500857929501538712::1719209008::1719209009::1::::<><>::
 Dead3.png::CompressedTexture2D::5056438036429665936::1719209008::1719209009::1::::<><>::
@@ -158,19 +173,25 @@ Dead5.png::CompressedTexture2D::6153808995427879870::1719209008::1719209009::1::
 Dead6.png::CompressedTexture2D::2235641022070491738::1719209008::1719209009::1::::<><>::
 Dead7.png::CompressedTexture2D::6160166662478223542::1719209008::1719209009::1::::<><>::
 Dead8.png::CompressedTexture2D::6417331640298848265::1719209008::1719209009::1::::<><>::
+ultimo zomb.png::CompressedTexture2D::3366001834746557660::1720490818::1720490818::1::::<><>::
 Walk1.png::CompressedTexture2D::739432457110307958::1719209657::1719209658::1::::<><>::
 Walk2.png::CompressedTexture2D::2962650253217346617::1719209657::1719209658::1::::<><>::
 Walk3.png::CompressedTexture2D::7706968697578731411::1719209657::1719209658::1::::<><>::
 Walk4.png::CompressedTexture2D::8597296701285815344::1719209657::1719209658::1::::<><>::
 Walk5.png::CompressedTexture2D::7907568676744393548::1719209657::1719209658::1::::<><>::
 Walk6.png::CompressedTexture2D::4737584708889261132::1719209657::1719209658::1::::<><>::
-::res://fuentes/::1720198642
+::res://enemy/Zombie1/Zombi jefe/::1720563261
+zombie jefe camina 1.png::CompressedTexture2D::7036852193571669658::1720563259::1720563261::1::::<><>::
+zombie jefe camina 2.png::CompressedTexture2D::2297213553451203237::1720563259::1720563261::1::::<><>::
+zombie jefe camina 3.png::CompressedTexture2D::5399718112269016418::1720563259::1720563261::1::::<><>::
+zombiJefee.png::CompressedTexture2D::1408487358376975404::1720247696::1720506514::1::::<><>::
+::res://fuentes/::1720483744
 Aarvark Cafe.ttf::FontFile::8196609909880628194::1720198642::1720198642::1::::<><>::
 eEzWin.ttf::FontFile::3973681402769609661::1696365337::1696365341::1::::<><>::
 Gold Mine.ttf::FontFile::7462890352162619000::1696365337::1696365341::1::::<><>::
 pixelart.ttf::FontFile::3856497807049408795::1696365337::1696365341::1::::<><>::
-::res://fuentes/Dialogos/::1720401213
-::res://fuentes/Dialogos/EscenarioAlex/::1720420626
+::res://fuentes/Dialogos/::1720579118
+::res://fuentes/Dialogos/EscenarioAlex/::1720571173
 AlexEs1.gd::GDScript::-1::1720249236::0::1::::<>Node2D<>::
 AlexEs1.tscn::PackedScene::4450675579650951004::1720420021::0::1::::<><>::res://fuentes/Dialogos/EscenarioAlex/AlexEs1.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://cn1q3t1qppmcp::::res://33/objetos/Saloness/MapaAlex.png<>uid://sdmnpogc6uqp::::res://33/personaje/Alex/Alex camina/Alex- camina -7.png<>uid://biheof31conjd::::res://enemy/Zombie1/animation/Walk2.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://dtjf4aml1hm3f::::res://33/Sonidos/Sonido corto zombie.mp3
 AlexEs2.gd::GDScript::-1::1720252385::0::1::::<>Node2D<>::
@@ -178,15 +199,23 @@ AlexEs2.tscn::PackedScene::2829005071378048396::1720420021::0::1::::<><>::res://
 AlexEs3.gd::GDScript::-1::1720256172::0::1::::<>Node2D<>::
 AlexEs3.tscn::PackedScene::343360651690010654::1720420022::0::1::::<><>::res://fuentes/Dialogos/EscenarioAlex/AlexEs3.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://cn1q3t1qppmcp::::res://33/objetos/Saloness/MapaAlex.png<>uid://n81tt0i52vww::::res://33/personaje/Alex/Alex dispara.png<>uid://ctw7lnlwyfp4a::::res://enemy/Zombie1/animation/Dead5.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://cebm2b3npbwt1::::res://enemy/Zombie1/animation/Dead3.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://crsydt0rhpuo7::::res://33/Sonidos/golpeAlexMarcos.mp3
 AlexEs4.gd::GDScript::-1::1720305348::0::1::::<>Node2D<>::
-AlexEs4.tscn::PackedScene::4353596936304092308::1720420626::0::1::::<><>::res://fuentes/Dialogos/EscenarioAlex/AlexEs4.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png
-::res://fuentes/Dialogos/EscenarioLina/::1720421638
+AlexEs4.tscn::PackedScene::4353596936304092308::1720571173::0::1::::<><>::res://fuentes/Dialogos/EscenarioAlex/AlexEs4.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png
+::res://fuentes/Dialogos/EscenarioLina/::1720571173
 LinaEs1.gd::GDScript::-1::1720403836::0::1::::<>Node2D<>::
 LinaEs1.tscn::PackedScene::6125231504285090576::1720421355::0::1::::<><>::res://fuentes/Dialogos/EscenarioLina/LinaEs1.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://bvavwjmvqrtt6::::res://33/objetos/Saloness/MapaLina.png<>uid://uqjaxcuvcw72::::res://33/personaje/Lina/Lina dispara2.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://biheof31conjd::::res://enemy/Zombie1/animation/Walk2.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://o31rreyk1y41::::res://33/Sonidos/Sonido largo zombie.mp3
 LinaEs2.gd::GDScript::-1::1720404849::0::1::::<>Node2D<>::
 LinaEs2.tscn::PackedScene::58331326409044768::1720421355::0::1::::<><>::res://fuentes/Dialogos/EscenarioLina/LinaEs2.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://bvavwjmvqrtt6::::res://33/objetos/Saloness/MapaLina.png<>uid://uqjaxcuvcw72::::res://33/personaje/Lina/Lina dispara2.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://cxourq2fodxcr::::res://enemy/Zombie1/animation/Dead8.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://b34bau4161knd::::res://33/Leyendas/altavoz.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://ccieeigrn6fyu::::res://33/impact/salpicadura.png<>uid://dd2avkqkkjvx5::::res://33/Sonidos/SONIDO MOTOSIERRA  LARGO.mp3
-LinaEs3.gd::GDScript::-1::1720421499::0::1::::<>Node2D<>::
-LinaEs3.tscn::PackedScene::92483675737168573::1720421638::0::1::::<><>::res://fuentes/Dialogos/EscenarioLina/LinaEs3.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png
-::res://fuentes/Dialogos/EscenarioLina/Sonidos/::1720421503
+LinaEs3.gd::GDScript::-1::1720491035::0::1::::<>Node2D<>::
+LinaEs3.tscn::PackedScene::92483675737168573::1720491035::0::1::::<><>::res://fuentes/Dialogos/EscenarioLina/LinaEs3.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://q6j777tm0yf2::::res://33/personaje/Lina/Lina dialoga.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://dp2s7hahaauxg::::res://33/personaje/marcos poses/normal.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png
+LinaEs4.gd::GDScript::-1::1720491319::0::1::::<>Node2D<>::
+LinaEs4.tscn::PackedScene::719192862519746404::1720491319::0::1::::<><>::res://fuentes/Dialogos/EscenarioLina/LinaEs4.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://q6j777tm0yf2::::res://33/personaje/Lina/Lina dialoga.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://dp2s7hahaauxg::::res://33/personaje/marcos poses/normal.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png
+LinaEs5.gd::GDScript::-1::1720491603::0::1::::<>Node2D<>::
+LinaEs5.tscn::PackedScene::6929464203383014181::1720491649::0::1::::<><>::res://fuentes/Dialogos/EscenarioLina/LinaEs5.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://q6j777tm0yf2::::res://33/personaje/Lina/Lina dialoga.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://dp2s7hahaauxg::::res://33/personaje/marcos poses/normal.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png
+LinaEs6.gd::GDScript::-1::1720492119::0::1::::<>Node2D<>::
+LinaEs6.tscn::PackedScene::1839210080205766363::1720492119::0::1::::<><>::res://fuentes/Dialogos/EscenarioLina/LinaEs6.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://q6j777tm0yf2::::res://33/personaje/Lina/Lina dialoga.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://dp2s7hahaauxg::::res://33/personaje/marcos poses/normal.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png
+LinaEs7.gd::GDScript::-1::1720569546::0::1::::<>Node2D<>::
+LinaEs7.tscn::PackedScene::2988676978404839282::1720571173::0::1::::<><>::res://fuentes/Dialogos/EscenarioLina/LinaEs7.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://q6j777tm0yf2::::res://33/personaje/Lina/Lina dialoga.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://dp2s7hahaauxg::::res://33/personaje/marcos poses/normal.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png
+::res://fuentes/Dialogos/EscenarioLina/Sonidos/::1720483744
 DisparoSofia.wav::AudioStreamWAV::8546732062721451103::1720421499::1720421500::1::::<><>::
 golpeAlexMarcos.mp3::AudioStreamMP3::6485743941581254151::1720421499::1720421500::1::::<><>::
 grito alex y marcos.mp3::AudioStreamMP3::3500164524027505065::1720421499::1720421500::1::::<><>::
@@ -206,21 +235,30 @@ WIN pixel.mp3::AudioStreamMP3::3567854132984227212::1720421500::1720421500::1:::
 you lose.mp3::AudioStreamMP3::2815536165575616706::1720421500::1720421500::1::::<><>::
 Zombi enorme zonido corto.mp3::AudioStreamMP3::7560302246817162065::1720421500::1720421500::1::::<><>::
 Zombi enorme zonido largo.mp3::AudioStreamMP3::6079870907234577999::1720421500::1720421500::1::::<><>::
-::res://fuentes/Dialogos/EscenarioMarcos/::1720419795
+::res://fuentes/Dialogos/EscenarioMarcos/::1720506537
 escenario_1_marco.tscn::PackedScene::4666704971283834373::1720403179::0::1::::<><>::uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://dkhc0wqj22gvo::::res://33/personaje/marcos poses/sentado.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf
 MarcosEs1.gd::GDScript::-1::1720248685::0::1::::<>Node2D<>::
 MarcosEs1.tscn::PackedScene::7469131838860509689::1720417872::0::1::::<><>::res://fuentes/Dialogos/EscenarioMarcos/MarcosEs1.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://dkhc0wqj22gvo::::res://33/personaje/marcos poses/sentado.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://dtjf4aml1hm3f::::res://33/Sonidos/Sonido corto zombie.mp3
 MarcosEs2.gd::GDScript::-1::1720248693::0::1::::<>Node2D<>::
-MarcosEs2.tscn::PackedScene::3608783620208780333::1720418166::0::1::::<><>::res://fuentes/Dialogos/EscenarioMarcos/MarcosEs2.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://dw3thyv6lp0w8::::res://33/personaje/marcos poses/corre2.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://dkwqra6jmxh37::::res://enemy/Zombie1/animation/Walk5.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://0rnedyhmde6h::::res://33/Sonidos/mover silla.wav
+MarcosEs2.tscn::PackedScene::3608783620208780333::1720499924::0::1::::<><>::res://fuentes/Dialogos/EscenarioMarcos/MarcosEs2.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://dw3thyv6lp0w8::::res://33/personaje/marcos poses/corre2.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://dkwqra6jmxh37::::res://enemy/Zombie1/animation/Walk5.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://0rnedyhmde6h::::res://33/Sonidos/mover silla.wav
 MarcosEs3.gd::GDScript::-1::1720215224::0::1::::<>Node2D<>::
-MarcosEs3.tscn::PackedScene::6505804392830608473::1720419795::0::1::::<><>::res://fuentes/Dialogos/EscenarioMarcos/MarcosEs3.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://c5bcsopinsa0b::::res://33/personaje/marcos poses/Disparos/disparo2.png<>uid://ctw7lnlwyfp4a::::res://enemy/Zombie1/animation/Dead5.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://crsydt0rhpuo7::::res://33/Sonidos/golpeAlexMarcos.mp3
+MarcosEs3.tscn::PackedScene::6505804392830608473::1720499924::0::1::::<><>::res://fuentes/Dialogos/EscenarioMarcos/MarcosEs3.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://c5bcsopinsa0b::::res://33/personaje/marcos poses/Disparos/disparo2.png<>uid://ctw7lnlwyfp4a::::res://enemy/Zombie1/animation/Dead5.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://crsydt0rhpuo7::::res://33/Sonidos/golpeAlexMarcos.mp3
 MarcosEs4.gd::GDScript::-1::1720248702::0::1::::<>Node2D<>::
 MarcosEs4.tscn::PackedScene::501782776653982598::1720419795::0::1::::<><>::res://fuentes/Dialogos/EscenarioMarcos/MarcosEs4.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://daxrfquuswc3n::::res://33/objetos/Saloness/MapaDirector.png<>uid://dp2s7hahaauxg::::res://33/personaje/marcos poses/normal.png<>uid://icb36tgiafp6::::res://33/policia.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://8ftqrk3nkrxe::::res://33/Sonidos/radio.mp3
 MarcosEs5.gd::GDScript::-1::1720249321::0::1::::<>Node2D<>::
-MarcosEs5.tscn::PackedScene::4315812243456473346::1720419795::0::1::::<><>::res://fuentes/Dialogos/EscenarioMarcos/MarcosEs5.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://daxrfquuswc3n::::res://33/objetos/Saloness/MapaDirector.png<>uid://dp2s7hahaauxg::::res://33/personaje/marcos poses/normal.png<>uid://icb36tgiafp6::::res://33/policia.png<>uid://ucjt0waoymki::::res://enemy/Zombie1/zombiJefee.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://bykhywgpg5v8m::::res://33/Sonidos/Zombi enorme zonido corto.mp3
-::res://fuentes/Dialogos/EscenarioSofia/::1720421355
+MarcosEs5.tscn::PackedScene::4315812243456473346::1720506537::0::1::::<><>::res://fuentes/Dialogos/EscenarioMarcos/MarcosEs5.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://daxrfquuswc3n::::res://33/objetos/Saloness/MapaDirector.png<>uid://dp2s7hahaauxg::::res://33/personaje/marcos poses/normal.png<>uid://icb36tgiafp6::::res://33/policia.png<>uid://ucjt0waoymki::::res://enemy/Zombie1/Zombi jefe/zombiJefee.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://bykhywgpg5v8m::::res://33/Sonidos/Zombi enorme zonido corto.mp3
+::res://fuentes/Dialogos/EscenariosFinal/::1720660480
+FinalEs1.gd::GDScript::-1::1720659625::0::1::::<>Node2D<>::
+FinalEs1.tscn::PackedScene::8332735359661155731::1720660480::0::1::::<><>::res://fuentes/Dialogos/EscenariosFinal/FinalEs1.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://p5gpg743wgv0::::res://33/personaje/Sofia/Sofia arroja.png<>uid://uqjaxcuvcw72::::res://33/personaje/Lina/Lina dispara2.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://dw3thyv6lp0w8::::res://33/personaje/marcos poses/corre2.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://ci6wtlcn5lddy::::res://enemy/Zombie1/Zombi jefe/zombie jefe camina 3.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://bfglcvuqdxtyx::::res://33/impact/bomb_2.png<>uid://0gepb73gvssl::::res://33/botones/NextText.png
+FinalEs2.gd::GDScript::-1::1720660099::0::1::::<>Node2D<>::
+FinalEs2.tscn::PackedScene::6789937651072626990::1720660428::0::1::::<><>::res://fuentes/Dialogos/EscenariosFinal/FinalEs2.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://p5gpg743wgv0::::res://33/personaje/Sofia/Sofia arroja.png<>uid://uqjaxcuvcw72::::res://33/personaje/Lina/Lina dispara2.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://dw3thyv6lp0w8::::res://33/personaje/marcos poses/corre2.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://ci6wtlcn5lddy::::res://enemy/Zombie1/Zombi jefe/zombie jefe camina 3.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://dc2puyk5kvfr3::::res://33/impact/explosion.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://jopdqt6ud4fx::::res://33/Sonidos/Explosion.mp3
+FinalEs3.gd::GDScript::-1::1720660362::0::1::::<>Node2D<>::
+FinalEs3.tscn::PackedScene::1613332075601658336::1720660428::0::1::::<><>::res://fuentes/Dialogos/EscenariosFinal/FinalEs3.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://dejua7761bp0u::::res://33/personaje/Lina/Lina disparo1.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://dp2s7hahaauxg::::res://33/personaje/marcos poses/normal.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://drcqo5ofgj2ec::::res://33/impact/fuego.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://deare6va0b471::::res://33/personaje/Alex/Disparo1.png<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://dc2puyk5kvfr3::::res://33/impact/explosion.png<>uid://jopdqt6ud4fx::::res://33/Sonidos/Explosion.mp3<>uid://dnpduwxbmqfng::::res://33/Sonidos/all units we got a 5150 over at harvard square (boston).mp3
+FinalEs4.gd::GDScript::-1::1720658883::0::1::::<>Node2D<>::
+FinalEs4.tscn::PackedScene::4208380898663725055::1720660474::0::1::::<><>::res://fuentes/Dialogos/EscenariosFinal/FinalEs4.gd<>uid://dya42t5o0pmat::::res://33/objetos/Escenario fondo.png<>uid://dip6c83ivsjyv::::res://33/Sonidos/Win normal.mp3<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png
+::res://fuentes/Dialogos/EscenarioSofia/::1720652724
 SofiaEs1.gd::GDScript::-1::1720304101::0::1::::<>Node2D<>::
-SofiaEs1.tscn::PackedScene::5380413016260551901::1720420626::0::1::::<><>::res://fuentes/Dialogos/EscenarioSofia/SofiaEs1.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://cfvv2w8m57hjh::::res://33/objetos/Saloness/MapaSofia.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://biheof31conjd::::res://enemy/Zombie1/animation/Walk2.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://dmel4g0ihqqea::::res://33/Sonidos/Gritos largos.mp3
+SofiaEs1.tscn::PackedScene::5380413016260551901::1720499925::0::1::::<><>::res://fuentes/Dialogos/EscenarioSofia/SofiaEs1.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://cfvv2w8m57hjh::::res://33/objetos/Saloness/MapaSofia.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://biheof31conjd::::res://enemy/Zombie1/animation/Walk2.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://dmel4g0ihqqea::::res://33/Sonidos/Gritos largos.mp3
 SofiaEs2.gd::GDScript::-1::1720304340::0::1::::<>Node2D<>::
 SofiaEs2.tscn::PackedScene::7141351644375314836::1720420626::0::1::::<><>::res://fuentes/Dialogos/EscenarioSofia/SofiaEs2.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://cfvv2w8m57hjh::::res://33/objetos/Saloness/MapaSofia.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://biheof31conjd::::res://enemy/Zombie1/animation/Walk2.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://dcyf61v823a2h::::res://33/Sonidos/Laboratorio efecto de sonido.mp3
 SofiaEs3.gd::GDScript::-1::1720404474::0::1::::<>Node2D<>::
@@ -228,30 +266,34 @@ SofiaEs3.tscn::PackedScene::6610535361760430660::1720420768::0::1::::<><>::res:/
 SofiaEs4.gd::GDScript::-1::1720400808::0::1::::<>Node2D<>::
 SofiaEs4.tscn::PackedScene::3399936925311568585::1720421355::0::1::::<><>::res://fuentes/Dialogos/EscenarioSofia/SofiaEs4.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://0gepb73gvssl::::res://33/botones/NextText.png
 SofiaEs5.gd::GDScript::-1::1720400843::0::1::::<>Node2D<>::
-SofiaEs5.tscn::PackedScene::8375052515881106823::1720421355::0::1::::<><>::res://fuentes/Dialogos/EscenarioSofia/SofiaEs5.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png
-::res://mundo/::1720421537
-mundo_3.gd::GDScript::-1::1720394147::0::1::::<>Node2D<>::
-mundo_3.tscn::PackedScene::4806537575206727235::1720400109::0::1::::<><>::uid://dsddyperv87y6::::res://33/fondo.png<>uid://dya42t5o0pmat::::res://33/objetos/Escenario fondo.png<>res://mundo/mundo_3.gd<>uid://ddd755qhlx13p::::res://33/objetos/Saloness/MapaMarcosGOD.png<>uid://dfgjwrthtl18v::::res://33/prueba/tileset3.png<>uid://daxrfquuswc3n::::res://33/objetos/Saloness/MapaDirector.png<>res://scrips/Camera2D.gd<>uid://dqkrbn76wcaw1::::res://personaje/character_body_2d.tscn<>uid://c7tcxwpkj0ax5::::res://enemy/zomb.tscn<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://icb36tgiafp6::::res://33/policia.png<>uid://coajjqmbd4fjc::::res://33/Sonidos/WIN pixel.mp3<>uid://dcudgdjo7u6yn::::res://33/Sonidos/Map1.wav
-mundo_4.gd::GDScript::-1::1720394147::0::1::::<>Node2D<>::
-mundo_4.tscn::PackedScene::8239450269108547172::1720400090::0::1::::<><>::res://mundo/mundo_4.gd<>uid://dsddyperv87y6::::res://33/fondo.png<>uid://dya42t5o0pmat::::res://33/objetos/Escenario fondo.png<>uid://cn1q3t1qppmcp::::res://33/objetos/Saloness/MapaAlex.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://dfgjwrthtl18v::::res://33/prueba/tileset3.png<>res://scrips/Camera2D.gd<>uid://c7tcxwpkj0ax5::::res://enemy/zomb.tscn<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://coajjqmbd4fjc::::res://33/Sonidos/WIN pixel.mp3<>uid://b7p6d67tn0ufj::::res://personaje/character_body_2dAlex.tscn<>uid://c0yecmonxxiaq::::res://33/Sonidos/Map2.wav
-mundo_5.gd::GDScript::-1::1720401023::0::1::::<>Node2D<>::
-mundo_5.tscn::PackedScene::6348445805357533214::1720421355::0::1::::<><>::res://mundo/mundo_5.gd<>uid://dsddyperv87y6::::res://33/fondo.png<>uid://dya42t5o0pmat::::res://33/objetos/Escenario fondo.png<>uid://cfvv2w8m57hjh::::res://33/objetos/Saloness/MapaSofia.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://dfgjwrthtl18v::::res://33/prueba/tileset3.png<>res://scrips/Camera2D.gd<>uid://c7tcxwpkj0ax5::::res://enemy/zomb.tscn<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://ci8phv3uiernx::::res://personaje/character_body_2dSofia.tscn<>uid://coajjqmbd4fjc::::res://33/Sonidos/WIN pixel.mp3<>uid://cvgditd6g4ldr::::res://33/Sonidos/Map3.wav
-mundo_6.gd::GDScript::-1::1720421537::0::1::::<>Node2D<>::
-mundo_6.tscn::PackedScene::9172625178131365536::1720421537::0::1::::<><>::res://mundo/mundo_6.gd<>uid://dsddyperv87y6::::res://33/fondo.png<>uid://dya42t5o0pmat::::res://33/objetos/Escenario fondo.png<>uid://bvavwjmvqrtt6::::res://33/objetos/Saloness/MapaLina.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://dfgjwrthtl18v::::res://33/prueba/tileset3.png<>res://scrips/Camera2D.gd<>uid://c7tcxwpkj0ax5::::res://enemy/zomb.tscn<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://coajjqmbd4fjc::::res://33/Sonidos/WIN pixel.mp3<>uid://cvgditd6g4ldr::::res://33/Sonidos/Map3.wav<>uid://bg03o2sa24ga5::::res://personaje/character_body_2dLina.tscn
-::res://objetos/::1719521555
+SofiaEs5.tscn::PackedScene::8375052515881106823::1720652724::0::1::::<><>::res://fuentes/Dialogos/EscenarioSofia/SofiaEs5.gd<>uid://b7brxaq8vff1a::::res://33/Leyendas/Marcos/Escena1Marcos.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://ddqiokguac1mw::::res://33/Leyendas/Leyenda1.png<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png
+::res://mundo/::1720659602
+mundoFinal.gd::GDScript::-1::1720653512::0::1::::<>Node2D<>::
+mundoFinal.tscn::PackedScene::349409427787443428::1720658910::0::1::::<><>::res://mundo/mundoFinal.gd<>uid://dsddyperv87y6::::res://33/fondo.png<>uid://dya42t5o0pmat::::res://33/objetos/Escenario fondo.png<>uid://cdx8c0s40ru5u::::res://33/objetos/Saloness/Mapa Grande.png<>uid://dy0is4biuym56::::res://33/objetos/mesa.png<>uid://d38tidbxcbjjc::::res://33/objetos/Silla.png<>uid://dfgjwrthtl18v::::res://33/prueba/tileset3.png<>uid://v0niise3sras::::res://33/prueba/fondo.png<>uid://u2puohx6vph::::res://33/Madera.png<>uid://bfahk184g6ji4::::res://33/impact/pared invisible.png<>uid://bvphg1k732fwh::::res://33/personaje/Alex/Alex pone tablas.png<>uid://c86clsitis8e8::::res://33/personaje/Sofia/sofia mezcla.png<>uid://uqjaxcuvcw72::::res://33/personaje/Lina/Lina dispara2.png<>uid://coajjqmbd4fjc::::res://33/Sonidos/WIN pixel.mp3<>uid://cvgditd6g4ldr::::res://33/Sonidos/Map3.wav<>uid://chleefrmy8sge::::res://personaje/MarcosFinal.tscn<>uid://bpvyik4w3mwva::::res://enemy/zombJefe.tscn
+mundo_3.gd::GDScript::-1::1720659602::0::1::::<>Node2D<>::
+mundo_3.tscn::PackedScene::4806537575206727235::1720659570::0::1::::<><>::uid://dsddyperv87y6::::res://33/fondo.png<>uid://dya42t5o0pmat::::res://33/objetos/Escenario fondo.png<>res://mundo/mundo_3.gd<>uid://ddd755qhlx13p::::res://33/objetos/Saloness/MapaMarcosGOD.png<>uid://dfgjwrthtl18v::::res://33/prueba/tileset3.png<>uid://daxrfquuswc3n::::res://33/objetos/Saloness/MapaDirector.png<>res://scrips/Camera2D.gd<>uid://dqkrbn76wcaw1::::res://personaje/character_body_2d.tscn<>uid://c7tcxwpkj0ax5::::res://enemy/zomb.tscn<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://icb36tgiafp6::::res://33/policia.png<>uid://coajjqmbd4fjc::::res://33/Sonidos/WIN pixel.mp3<>uid://ci4gc03lijud5::::res://33/Sonidos/MAP1.mp3
+mundo_4.gd::GDScript::-1::1720652526::0::1::::<>Node2D<>::
+mundo_4.tscn::PackedScene::8239450269108547172::1720652724::0::1::::<><>::res://mundo/mundo_4.gd<>uid://dsddyperv87y6::::res://33/fondo.png<>uid://dya42t5o0pmat::::res://33/objetos/Escenario fondo.png<>uid://cn1q3t1qppmcp::::res://33/objetos/Saloness/MapaAlex.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://dfgjwrthtl18v::::res://33/prueba/tileset3.png<>res://scrips/Camera2D.gd<>uid://c7tcxwpkj0ax5::::res://enemy/zomb.tscn<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://coajjqmbd4fjc::::res://33/Sonidos/WIN pixel.mp3<>uid://b7p6d67tn0ufj::::res://personaje/character_body_2dAlex.tscn<>uid://c0yecmonxxiaq::::res://33/Sonidos/Map2.wav
+mundo_5.gd::GDScript::-1::1720652563::0::1::::<>Node2D<>::
+mundo_5.tscn::PackedScene::6348445805357533214::1720652725::0::1::::<><>::res://mundo/mundo_5.gd<>uid://dsddyperv87y6::::res://33/fondo.png<>uid://dya42t5o0pmat::::res://33/objetos/Escenario fondo.png<>uid://cfvv2w8m57hjh::::res://33/objetos/Saloness/MapaSofia.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://dfgjwrthtl18v::::res://33/prueba/tileset3.png<>res://scrips/Camera2D.gd<>uid://c7tcxwpkj0ax5::::res://enemy/zomb.tscn<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://ci8phv3uiernx::::res://personaje/character_body_2dSofia.tscn<>uid://coajjqmbd4fjc::::res://33/Sonidos/WIN pixel.mp3<>uid://cvgditd6g4ldr::::res://33/Sonidos/Map3.wav
+mundo_6.gd::GDScript::-1::1720652589::0::1::::<>Node2D<>::
+mundo_6.tscn::PackedScene::9172625178131365536::1720652725::0::1::::<><>::res://mundo/mundo_6.gd<>uid://dsddyperv87y6::::res://33/fondo.png<>uid://dya42t5o0pmat::::res://33/objetos/Escenario fondo.png<>uid://bvavwjmvqrtt6::::res://33/objetos/Saloness/MapaLina.png<>uid://ckijaib545y4i::::res://33/objetos/Saloness/MapaCafeteria.png<>uid://dfgjwrthtl18v::::res://33/prueba/tileset3.png<>res://scrips/Camera2D.gd<>uid://c7tcxwpkj0ax5::::res://enemy/zomb.tscn<>uid://bu7d7qqv3lvh8::::res://fuentes/pixelart.ttf<>uid://0gepb73gvssl::::res://33/botones/NextText.png<>uid://ci4gc03lijud5::::res://33/Sonidos/MAP1.mp3<>uid://coajjqmbd4fjc::::res://33/Sonidos/WIN pixel.mp3<>uid://bg03o2sa24ga5::::res://personaje/character_body_2dLina.tscn
+::res://objetos/::1720483744
 plataforma.tscn::PackedScene::24463928017250302::1697070459::0::1::::<><>::uid://b2e8jrbrcro3u
-::res://personaje/::1720408115
-character_body_2d.gd::GDScript::-1::1720394497::0::1::::<>CharacterBody2D<>::
+::res://personaje/::1720658910
+character_body_2d.gd::GDScript::-1::1720571514::0::1::::<>CharacterBody2D<>::
 character_body_2d.tscn::PackedScene::8303962035174623958::1720399438::0::1::::<><>::res://personaje/character_body_2d.gd<>uid://d2xe0e0xipvi2::::res://33/personaje/marcos poses/Disparos/Disparo 1.png<>uid://c5bcsopinsa0b::::res://33/personaje/marcos poses/Disparos/disparo2.png<>uid://cl0d7ugc5ob5n::::res://33/personaje/marcos poses/Salto.png<>uid://dp2s7hahaauxg::::res://33/personaje/marcos poses/normal.png<>uid://db8anipawu27x::::res://33/personaje/marcos poses/caminar/character_maleAdventurer_walk3.png<>uid://58wmufbchaun::::res://33/personaje/marcos poses/caminar/character_maleAdventurer_walk1.png<>uid://bv2md2pjjpots::::res://33/personaje/marcos poses/caminar/character_maleAdventurer_walk2.png<>uid://crsydt0rhpuo7::::res://33/Sonidos/golpeAlexMarcos.mp3
 character_body_2dAlex.gd::GDScript::-1::1720394749::0::1::::<>CharacterBody2D<>::
 character_body_2dAlex.tscn::PackedScene::4665318609117756155::1720399438::0::1::::<><>::res://personaje/character_body_2dAlex.gd<>uid://deare6va0b471::::res://33/personaje/Alex/Disparo1.png<>uid://n81tt0i52vww::::res://33/personaje/Alex/Alex dispara.png<>uid://cf31i8fgw0ibp::::res://33/personaje/Alex/Salto.png<>uid://c4c8ph5hwx1ws::::res://33/personaje/Alex/Alex Normal.png<>uid://cu3maym7asayk::::res://33/personaje/Alex/Alex camina/Alex- camina -3.png<>uid://b8pwegqyb3tu8::::res://33/personaje/Alex/Alex camina/Alex- camina -4.png<>uid://o4oj5ryr80bj::::res://33/personaje/Alex/Alex camina/Alex- camina -6.png<>uid://crsydt0rhpuo7::::res://33/Sonidos/golpeAlexMarcos.mp3
 character_body_2dLina.gd::GDScript::-1::1720408113::0::1::::<>CharacterBody2D<>::
 character_body_2dLina.tscn::PackedScene::2860889712259080526::1720408115::0::1::::<><>::res://personaje/character_body_2dLina.gd<>uid://dejua7761bp0u::::res://33/personaje/Lina/Lina disparo1.png<>uid://uqjaxcuvcw72::::res://33/personaje/Lina/Lina dispara2.png<>uid://ciaiyfjk5dx1x::::res://33/personaje/Lina/Lina Salta.png<>uid://vxhc34aomw5s::::res://33/personaje/Lina/Lina normal.png<>uid://jgnrewl1yqll::::res://33/personaje/Lina/Lina Camina/Lina camina 1.png<>uid://btlneoqwpc6uo::::res://33/personaje/Lina/Lina Camina/Lina camina 2.png<>uid://c5ejqjir4x8ex::::res://33/personaje/Lina/Lina Camina/Lina camina 3.png<>uid://c62220e0ksm3c::::res://33/Sonidos/SONIDO MOTOSIERRA.mp3<>uid://deare6va0b471::::res://33/personaje/Alex/Disparo1.png
 character_body_2dSofia.gd::GDScript::-1::1720395023::0::1::::<>CharacterBody2D<>::
-character_body_2dSofia.tscn::PackedScene::5403400984987718197::1720399438::0::1::::<><>::res://personaje/character_body_2dSofia.gd<>uid://y6w1a714tx5n::::res://33/personaje/Sofia/dispara1.png<>uid://deare6va0b471::::res://33/personaje/Alex/Disparo1.png<>uid://du7xcky1j68oo::::res://33/personaje/Sofia/dispara2.png<>uid://dw0q7ecfpfpui::::res://33/personaje/Sofia/jump.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://4y542fi8tg6h::::res://33/personaje/Sofia/camina/SofiaCamina1.png<>uid://d1co6gmqkacy8::::res://33/personaje/Sofia/camina/SofiaCamina2.png<>uid://bn0njco73ighe::::res://33/personaje/Sofia/camina/SofiaCamina3.png<>uid://drcqo5ofgj2ec::::res://33/impact/fuego.png<>uid://bptlimyx5ofmp::::res://33/Sonidos/DisparoSofia.wav
-::res://scrips/::1720403568
-Camera2D.gd::GDScript::-1::1697768360::0::1::::<>Camera2D<>::
+character_body_2dSofia.tscn::PackedScene::5403400984987718197::1720570398::0::1::::<><>::res://personaje/character_body_2dSofia.gd<>uid://y6w1a714tx5n::::res://33/personaje/Sofia/dispara1.png<>uid://deare6va0b471::::res://33/personaje/Alex/Disparo1.png<>uid://du7xcky1j68oo::::res://33/personaje/Sofia/dispara2.png<>uid://dw0q7ecfpfpui::::res://33/personaje/Sofia/jump.png<>uid://btjwxoh8bvftn::::res://33/personaje/Sofia/normal.png<>uid://4y542fi8tg6h::::res://33/personaje/Sofia/camina/SofiaCamina1.png<>uid://d1co6gmqkacy8::::res://33/personaje/Sofia/camina/SofiaCamina2.png<>uid://bn0njco73ighe::::res://33/personaje/Sofia/camina/SofiaCamina3.png<>uid://drcqo5ofgj2ec::::res://33/impact/fuego.png<>uid://bptlimyx5ofmp::::res://33/Sonidos/DisparoSofia.wav
+MarcosFinal.gd::GDScript::-1::1720564099::0::1::::<>CharacterBody2D<>::
+MarcosFinal.tscn::PackedScene::5287121728750812768::1720658910::0::1::::<><>::res://personaje/MarcosFinal.gd<>uid://d2xe0e0xipvi2::::res://33/personaje/marcos poses/Disparos/Disparo 1.png<>uid://c5bcsopinsa0b::::res://33/personaje/marcos poses/Disparos/disparo2.png<>uid://cl0d7ugc5ob5n::::res://33/personaje/marcos poses/Salto.png<>uid://dp2s7hahaauxg::::res://33/personaje/marcos poses/normal.png<>uid://db8anipawu27x::::res://33/personaje/marcos poses/caminar/character_maleAdventurer_walk3.png<>uid://58wmufbchaun::::res://33/personaje/marcos poses/caminar/character_maleAdventurer_walk1.png<>uid://bv2md2pjjpots::::res://33/personaje/marcos poses/caminar/character_maleAdventurer_walk2.png<>uid://crsydt0rhpuo7::::res://33/Sonidos/golpeAlexMarcos.mp3
+::res://scrips/::1720652453
+Camera2D.gd::GDScript::-1::1720652453::0::1::::<>Camera2D<>::
 carga.gd::GDScript::-1::1719518389::0::1::::<>Node2D<>::
-gameover.gd::GDScript::-1::1720403568::0::1::::<>CanvasLayer<>::
+gameover.gd::GDScript::-1::1720575871::0::1::::<>CanvasLayer<>::
 mundo_2.gd::GDScript::-1::1697768360::0::1::::<>Node2D<>::
 Trans.gd::GDScript::-1::1696822873::0::1::::<>CanvasLayer<>::

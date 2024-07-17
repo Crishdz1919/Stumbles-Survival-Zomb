@@ -10,8 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://c7tcxwpkj0ax5" path="res://enemy/zomb.tscn" id="8_qvhkx"]
 [ext_resource type="FontFile" uid="uid://bu7d7qqv3lvh8" path="res://fuentes/pixelart.ttf" id="9_ajm7l"]
 [ext_resource type="Texture2D" uid="uid://0gepb73gvssl" path="res://33/botones/NextText.png" id="10_sma3i"]
+[ext_resource type="AudioStream" uid="uid://ci4gc03lijud5" path="res://33/Sonidos/MAP1.mp3" id="12_g1c2n"]
 [ext_resource type="AudioStream" uid="uid://coajjqmbd4fjc" path="res://33/Sonidos/WIN pixel.mp3" id="12_k1ca6"]
-[ext_resource type="AudioStream" uid="uid://cvgditd6g4ldr" path="res://33/Sonidos/Map3.wav" id="13_gnyu0"]
 [ext_resource type="PackedScene" uid="uid://bg03o2sa24ga5" path="res://personaje/character_body_2dLina.tscn" id="13_lqk84"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qpv7s"]
@@ -279,12 +279,12 @@ scale = Vector2(1.1, 1.049)
 stream = ExtResource("12_k1ca6")
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("13_gnyu0")
-volume_db = -25.0
+stream = ExtResource("12_g1c2n")
+volume_db = 5.0
 autoplay = true
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("13_lqk84")]
-position = Vector2(1420, 447)
+position = Vector2(-338, 520)
 scale = Vector2(1.4, 1.4)
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

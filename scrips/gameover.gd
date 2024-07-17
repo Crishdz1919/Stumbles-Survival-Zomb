@@ -31,7 +31,14 @@ func _on_button_pressed():
 	$VBoxContainer.hide()
 
 func _on_button_2_pressed():
-	Trans.change_scene("res://mundo.tscn")
+	@warning_ignore("unused_variable")
+	var current_scene = get_tree().current_scene
 	get_tree().paused = false
 	layer = -1
+	# Recargar la escena actual
+	get_tree().reload_current_scene()
+	Trans.change_scene("res://mundo.tscn")
+	layer = -1
 	$VBoxContainer.hide()
+	get_tree().paused = false
+

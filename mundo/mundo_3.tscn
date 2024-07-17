@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://0gepb73gvssl" path="res://33/botones/NextText.png" id="11_xb8pp"]
 [ext_resource type="Texture2D" uid="uid://icb36tgiafp6" path="res://33/policia.png" id="12_plu8m"]
 [ext_resource type="AudioStream" uid="uid://coajjqmbd4fjc" path="res://33/Sonidos/WIN pixel.mp3" id="13_4jfec"]
-[ext_resource type="AudioStream" uid="uid://dcudgdjo7u6yn" path="res://33/Sonidos/Map1.wav" id="14_isvn2"]
+[ext_resource type="AudioStream" uid="uid://ci4gc03lijud5" path="res://33/Sonidos/MAP1.mp3" id="14_3nwkx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qpv7s"]
 texture = ExtResource("4_jm6cl")
@@ -276,8 +276,8 @@ texture = ExtResource("12_plu8m")
 stream = ExtResource("13_4jfec")
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("14_isvn2")
-volume_db = -15.0
+stream = ExtResource("14_3nwkx")
+volume_db = 5.0
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

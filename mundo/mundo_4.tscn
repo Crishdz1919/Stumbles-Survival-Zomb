@@ -276,7 +276,7 @@ stream = ExtResource("12_d7m7i")
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("13_rfn8e")
-volume_db = -15.0
+volume_db = 5.0
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
